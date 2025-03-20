@@ -1,0 +1,48 @@
+-- Tabel Produksi Susu Mentah
+CREATE TABLE raw_milks (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    cow_id INT NOT NULL,
+    production_time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    expiration_time DATETIME GENERATED ALWAYS AS (production_time + INTERVAL 8 HOUR) STORED,
+    volume_liters DECIMAL(5,2) NOT NULL,
+    previous_volume DECIMAL(5,2) DEFAULT NULL,
+    status VARCHAR(20) DEFAULT 'fresh',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (cow_id) REFERENCES cows(id) ON DELETE CASCADE
+);
+
+CREATE TABLE Product_Type (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    Product_Name VARCHAR(255) NOT NULL,
+    Product_Description TEXT,
+    Image VARCHAR(255),
+    Price DECIMAL(10,2) NOT NULL,
+    Unit VARCHAR(50),
+    Created_At TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    Updated_At TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE Product_Stock (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    Product_Type_ID INT NOT NULL,
+    Initial_Quantity INT NOT NULL,
+    Quantity INT NOT NULL,
+    Production_At DATE NOT NULL,
+    Expiry_At DATE NOT NULL,
+    Status VARCHAR(60) NOT NULL,
+    Created_At TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    Updated_At TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (Product_Type_ID) REFERENCES Product_Type(ID)
+);
+
+CREATE TABLE Stock_History (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    Product_Stock_ID INT NOT NULL,
+    Change_Type VARCHAR(20) NOT NULL,
+    Quantity_Change INT NOT NULL,
+    Change_Date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (Product_Stock_ID) REFERENCES Product_Stock(ID)
+);
+
+
+C:\Users\khens\Envs\notesenv\Scripts\activate
