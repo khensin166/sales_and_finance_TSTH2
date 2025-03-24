@@ -18,9 +18,15 @@ class ProductStockSerializer(serializers.ModelSerializer):
     class Meta:
         model = ProductStock
         fields = '__all__'
+        read_only_fields = ['quantity']  # Quantity tidak perlu diisi user
+
+    def create(self, validated_data):
+        # Set quantity sama dengan initial_quantity
+        validated_data['quantity'] = validated_data['initial_quantity']
+        return super().create(validated_data)
 
 
-# class StockHistorySerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = StockHistory
-#         fields = '__all__'
+class StockHistorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = StockHistory
+        fields = '__all__'

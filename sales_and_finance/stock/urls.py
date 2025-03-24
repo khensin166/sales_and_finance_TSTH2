@@ -24,6 +24,15 @@ urlpatterns = [
 
     # ================================ Product Stok ========================
     path("productstock", views.ProductStockCreateView.as_view(), name="product-stock-view-create"), # GET (all) & POST
+    path("productstock/<int:pk>/", views.ProductStockRetrieveUpdateDestroyView.as_view(), name="product-stock-detail"), # GET (one), PUT, PATCH, DELETE
+    
+    # ================================ Sell Product ========================
+    path("sellproduct/", views.SellProductView.as_view(), name="sell-product"),
+
+
+
+    # ================================ Product History ========================
+    path("producthistory", views.StockHistoryCreateView.as_view(), name="product-history-view-create"), # GET (all) & POST
 ]
     # Menyajikan file media hanya dalam mode DEBUG
 if settings.DEBUG:
