@@ -8,6 +8,7 @@ urlpatterns = [
     # ================================ RAW MILK ========================
     path("rawmilk", views.RawMilkListCreateView.as_view(), name="rawmilk-view-create"), # GET (all) & POST
     path("rawmilk/<int:pk>/", views.RawMilkRetrieveUpdateDestroyView.as_view(), name="rawmilk-detail"), # GET (one), PUT, PATCH, DELETE
+    
     # GET	/rawmilk/	Ambil semua data RawMilk
     # POST	/rawmilk/	Tambah data baru
     # GET	/rawmilk/1/	Ambil data dengan id=1
@@ -26,8 +27,14 @@ urlpatterns = [
     path("productstock", views.ProductStockCreateView.as_view(), name="product-stock-view-create"), # GET (all) & POST
     path("productstock/<int:pk>/", views.ProductStockRetrieveUpdateDestroyView.as_view(), name="product-stock-detail"), # GET (one), PUT, PATCH, DELETE
     
+    
     # ================================ Sell Product ========================
     path("sellproduct/", views.SellProductView.as_view(), name="sell-product"),
+    # Cara menggunakna metode post
+    #  {
+    #     "product_type_id": 1,
+    #     "quantity": 5
+    # }
 
 
 

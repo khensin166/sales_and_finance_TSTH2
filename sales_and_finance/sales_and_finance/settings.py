@@ -87,10 +87,25 @@ WSGI_APPLICATION = 'sales_and_finance.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'sales_and_finance_db',  # Ganti dengan nama database MySQL
+        'USER': 'root',  # Ganti dengan username MySQL
+        'PASSWORD': '',  # Ganti dengan password MySQL
+        'HOST': 'localhost',  # Jika menggunakan server lain, ganti sesuai kebutuhan
+        'PORT': '3306',  # Port default MySQL
+        'OPTIONS': {
+            'charset': 'utf8mb4',  # Menggunakan utf8mb4 agar mendukung emoji dan karakter khusus
+        },
     }
 }
 
