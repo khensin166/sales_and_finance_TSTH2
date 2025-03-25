@@ -46,3 +46,33 @@ CREATE TABLE Stock_History (
 
 
 C:\Users\khens\Envs\notesenv\Scripts\activate
+
+===================== untuk bagian sales =========================
+
+CREATE TABLE Order_Table (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    Customer_Name VARCHAR(255) NOT NULL,
+    Email VARCHAR(255),
+    Phone_Number VARCHAR(20),
+    Product_Stock_ID INT NOT NULL,
+    Quantity INT NOT NULL,
+    Location VARCHAR(255),
+    Price_At_Order DECIMAL(10,2) NOT NULL,
+    Notes TEXT,
+    Status VARCHAR(20) NOT NULL,
+    Payment_Method VARCHAR(20) NOT NULL,
+    Created_At TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (Product_Stock_ID) REFERENCES Product_Stock(ID)
+);
+
+CREATE TABLE Sales_Transaction (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    Order_ID INT NOT NULL,
+    Product_Stock_ID INT NOT NULL,
+    Transaction_Date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    Quantity INT NOT NULL,
+    Total_Price DECIMAL(10,2) NOT NULL,
+    FOREIGN KEY (Order_ID) REFERENCES Order_Table(ID),
+    FOREIGN KEY (Product_Stock_ID) REFERENCES Product_Stock(ID)
+);
+

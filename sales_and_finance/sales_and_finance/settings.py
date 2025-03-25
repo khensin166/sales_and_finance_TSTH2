@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     # add depedencies
     'rest_framework',
     'stock',
+    'sales',
 ]
 
 MIDDLEWARE = [
