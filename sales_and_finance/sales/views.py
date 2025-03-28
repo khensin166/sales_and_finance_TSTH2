@@ -16,19 +16,22 @@ class OrderDetailView(generics.RetrieveUpdateDestroyAPIView):
 
     def update(self, request, *args, **kwargs):
         instance = self.get_object()
+
+        # Cegah update order jika sudah Completed atau Cancelled
+        if instance.status in ['Completed', 'Cancelled']:
+            return Response({"error": "Pesanan yang sudah selesai atau dibatalkan tidak bisa diperbarui."}, status=status.HTTP_400_BAD_REQUEST)
+
         serializer = self.get_serializer(instance, data=request.data, partial=True)
         serializer.is_valid(raise_exception=True)
 
-        # Pastikan update status hanya jika shipping_cost bertambah
-        if 'shipping_cost' in request.data and instance.status == 'Requested':
-            instance.status = 'Processed'
+        # # Jika status masih Requested dan shipping_cost berubah, ubah ke Processed
+        # if 'shipping_cost' in request.data and instance.status == 'Requested':
+        #     if instance.shipping_cost > 0:
+        #         instance.status = 'Processed'
 
-        # Validasi sebelum menyelesaikan pesanan
-        if request.data.get('status') == 'Completed' and not request.data.get('payment_method'):
-            return Response({"error": "Metode pembayaran harus diisi sebelum menyelesaikan pesanan."}, status=status.HTTP_400_BAD_REQUEST)
-
-        # Simpan instance setelah perubahan
-        instance.save()
+        # # Validasi sebelum menyelesaikan pesanan
+        # if request.data.get('status') == 'Completed' and not instance.payment_method:
+        #     return Response({"error": "Metode pembayaran harus diisi sebelum menyelesaikan pesanan."}, status=status.HTTP_400_BAD_REQUEST)
 
         serializer.save()
         return Response(serializer.data, status=status.HTTP_200_OK)

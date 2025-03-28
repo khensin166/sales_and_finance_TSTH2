@@ -15,12 +15,16 @@ class RawMilk(models.Model):
     status = models.CharField(max_length=20, default='fresh')
     created_at = models.DateTimeField(auto_now_add=True)
 
+    # class Meta:
+    #     db_table = "raw_milks"
     def __str__(self):
         return f"Cow {self.cow_id} - {self.volume_liters}L"
 
 
 # Model Tipe Produk
 class ProductType(models.Model):
+    objects = models.Manager()
+
     product_name = models.CharField(max_length=255)
     product_description = models.TextField(blank=True, null=True)
     image = models.ImageField(upload_to='products/', blank=True, null=True)
@@ -29,13 +33,16 @@ class ProductType(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
-    objects = models.Manager()
+    # class Meta:
+    #     db_table = "product_type"
     def __str__(self):
         return f"{self.product_name}"
 
 
 # Model Stok Produk
 class ProductStock(models.Model):
+    objects = models.Manager()
+
     product_type = models.ForeignKey(ProductType, on_delete=models.CASCADE)
     initial_quantity = models.IntegerField()
     quantity = models.IntegerField()
@@ -46,7 +53,8 @@ class ProductStock(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
-    objects = models.Manager()
+    # class Meta:
+    #     db_table = "product_stock"
     def __str__(self):
         return f"{self.product_type}"
 
@@ -139,11 +147,14 @@ class ProductStock(models.Model):
 
 # Model Histori Perubahan Stok
 class StockHistory(models.Model):
+    
+    objects = models.Manager()
+    
     product_stock = models.ForeignKey(ProductStock, on_delete=models.CASCADE)
     change_type = models.CharField(max_length=20, choices=[("sold", "Sold"), ("expired", "Expired")])  # 'Added' atau 'Removed'
     quantity_change = models.IntegerField()
     change_date = models.DateTimeField(auto_now_add=True)
+    total_price = models.DecimalField(max_digits=10, decimal_places=2, editable=False, default=0.0)
 
-    objects = models.Manager()
     def __str__(self):
         return f"{self.change_type} {self.quantity_change}"

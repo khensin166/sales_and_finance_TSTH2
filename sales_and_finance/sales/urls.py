@@ -10,6 +10,27 @@ urlpatterns = [
     # GET /orders/ → List semua order.
 
     # POST /orders/ → Membuat order baru.
+    
+    #     {
+    #     "customer_name": "Kenan Tomfie Bukit",
+    #     "email": "kenan@example.com",
+    #     "phone_number": "08123456789",
+    #     "location": "Jakarta",
+    #     "shipping_cost": 5000,
+    #     "order_items": [
+    #         {
+    #             "product_stock": 1,
+    #             "quantity": 2,
+    #             "price_per_unit": 10000
+    #         },
+    #         {
+    #             "product_stock": 2,
+    #             "quantity": 1,
+    #             "price_per_unit": 5000
+    #         }
+    #     ]
+    # }
+
 
     # GET /orders/{id}/ → Melihat detail order tertentu.
 
@@ -17,6 +38,7 @@ urlpatterns = [
 
     # DELETE /orders/{id}/ → Menghapus order.
 ]
+
     # Menyajikan file media hanya dalam mode DEBUG
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
