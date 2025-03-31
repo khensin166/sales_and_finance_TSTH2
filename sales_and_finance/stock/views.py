@@ -55,7 +55,7 @@ class ProductStockCreateView(generics.ListCreateAPIView):
 
 class ProductStockRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     queryset = ProductStock.objects.all()
-    serializer_class = ProductTypeSerializer
+    serializer_class = ProductStockSerializer
 
 class StockHistoryCreateView(generics.ListCreateAPIView):
     queryset = StockHistory.objects.all()

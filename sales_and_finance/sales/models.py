@@ -50,23 +50,6 @@ class Order(models.Model):
         if is_status_changed and self.status == 'Completed':
             self.process_completion()
 
-        # """ Generate order_no jika belum ada dan validasi status """
-        # if not self.order_no:
-        #     self.order_no = f"ORD{uuid.uuid4().hex[:6].upper()}"
-
-        # # Validasi agar tidak bisa langsung ke "Completed" tanpa metode pembayaran
-        # if self.status == 'Completed' and not self.payment_method:
-        #     raise ValidationError("Metode pembayaran harus dipilih sebelum menyelesaikan order.") # pylint: disable=no-member
-
-        # super().save(*args, **kwargs)  # Simpan pertama kali untuk mendapatkan ID
-        
-        # # Hitung ulang total harga
-        # self.update_total_price()
-
-        # # Jika status berubah menjadi Completed, buat transaksi penjualan
-        # if self.status == 'Completed':
-        #     self.process_completion()
-
     def update_total_price(self):
         """ Hitung total harga berdasarkan OrderItem """
         total = sum(item.total_price for item in self.order_items.all()) # pylint: disable=no-member
@@ -87,32 +70,6 @@ class Order(models.Model):
                     quantity=item.quantity,
                     total_price=item.total_price
                 )
-
-
-            # for item in self.order_items.all():
-            #     # Buat transaksi penjualan
-            #     SalesTransaction.objects.create(
-            #         order=self,
-            #         product_stock=item.product_stock,
-            #         quantity=item.quantity,
-            #         total_price=item.total_price
-            #     )
-
-            #     # Kurangi stok produk
-            #     product_stock = item.product_stock
-            #     if product_stock.quantity < item.quantity:
-            #         raise ValidationError(f"Stok {product_stock} tidak mencukupi.")
-                
-            #     product_stock.quantity -= item.quantity
-            #     product_stock.save()
-
-            #     # Catat ke ProductHistory
-            #     StockHistory.objects.create(
-            #         product_stock=product_stock,
-            #         change_type="sold",
-            #         quantity_changed=item.quantity,
-            #         total_price=item.price_per_unit
-            #     )
 
     def __str__(self):
         return f"Order {self.order_no} - {self.customer_name}"

@@ -44,35 +44,6 @@ class OrderSerializer(serializers.ModelSerializer):
         order.save()
         return order
 
-    # def update(self, instance, validated_data):
-    #     """ Update Order dan OrderItems jika ada perubahan """
-    #     new_status = validated_data.get("status", instance.status)
-
-    #     print("DEBUG: validated_data", validated_data)  # Tambahkan debug log
-
-    #     if new_status == "Completed" and not instance.payment_method:
-    #         raise serializers.ValidationError({"payment_method": "Metode pembayaran harus diisi sebelum menyelesaikan pesanan."})
-
-    #     order_items_data = validated_data.pop("order_items", None)
-
-    #     for attr, value in validated_data.items():
-    #         setattr(instance, attr, value)
-
-    #     if order_items_data is not None:
-    #         instance.order_items.all().delete()  # Hapus item lama
-    #         order_items = []
-    #         for item_data in order_items_data:
-    #             product_stock = item_data["product_stock"]
-    #             if item_data["quantity"] > product_stock.quantity:
-    #                 raise serializers.ValidationError({"order_items": f"Stok {product_stock} tidak mencukupi."})
-    #             order_item = OrderItem.objects.create(order=instance, **item_data)
-    #             order_items.append(order_item)
-
-    #         instance.total_price = sum(item.total_price for item in order_items) + instance.shipping_cost
-
-    #     instance.save()
-    #     return instance
-
     def update(self, instance, validated_data):
         new_status = validated_data.get("status", instance.status)
         payment_method = validated_data.get("payment_method", instance.payment_method)
