@@ -1,8 +1,8 @@
-from django.db import models
-from stock.models import ProductStock, StockHistory
-from django.core.exceptions import ValidationError
 import uuid
+from django.core.exceptions import ValidationError
 from django.db import transaction
+from django.db import models
+from stock.models import ProductStock
 
 
 # Create your models here.

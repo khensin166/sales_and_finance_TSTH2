@@ -76,3 +76,6 @@ CREATE TABLE Sales_Transaction (
     FOREIGN KEY (Product_Stock_ID) REFERENCES Product_Stock(ID)
 );
 
+========================= untuk menjalankan crownjob ===============================
+
+python manage.py update_expiry_milk

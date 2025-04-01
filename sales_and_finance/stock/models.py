@@ -8,17 +8,27 @@ class RawMilk(models.Model):
     objects = models.Manager()
     
     cow_id = models.IntegerField()
-    production_time = models.DateTimeField()
-    expiration_time = models.DateTimeField()
+    production_time = models.DateTimeField(default=timezone.now)
+    expiration_time = models.DateTimeField(default=timezone.now)  # Bisa diubah saat save()
     volume_liters = models.DecimalField(max_digits=5, decimal_places=2)
-    previous_volume = models.DecimalField(max_digits=5, decimal_places=2, null=True, blank=True)
+    previous_volume = models.DecimalField(max_digits=5, decimal_places=2, default=0.00)
     status = models.CharField(max_length=20, default='fresh')
     created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    daily_total_id = models.IntegerField(null=True, blank=True)  # Hanya sebagai kolom biasa, bukan FK
+    session = models.IntegerField()
+    available_stocks = models.DecimalField(max_digits=10, decimal_places=2, default=0)
 
     # class Meta:
     #     db_table = "raw_milks"
+    def save(self, *args, **kwargs):
+        """Set expiration_time otomatis berdasarkan produksi"""
+        if not self.expiration_time:
+            self.expiration_time = self.production_time + timezone.timedelta(hours=8)  # Sesuai default DB
+        super().save(*args, **kwargs)
+
     def __str__(self):
-        return f"Cow {self.cow_id} - {self.volume_liters}L"
+        return f"Cow {self.cow_id} - {self.available_stocks}L available"
 
 
 # Model Tipe Produk
@@ -66,7 +76,7 @@ class ProductStock(models.Model):
         # Ambil stok susu dari yang paling lama (FIFO)
         raw_milk_entries = RawMilk.objects.filter(status="fresh").order_by("production_time")
 
-        total_available = sum(entry.volume_liters for entry in raw_milk_entries)
+        total_available = sum(entry.available_stocks for entry in raw_milk_entries)
         if self.total_milk_used > total_available:
             raise ValidationError("Stok susu mentah tidak mencukupi untuk produksi!")
 
@@ -77,12 +87,12 @@ class ProductStock(models.Model):
                 if remaining_milk_needed <= 0:
                     break
 
-                if entry.volume_liters <= remaining_milk_needed:
-                    remaining_milk_needed -= entry.volume_liters
-                    entry.volume_liters = 0
+                if entry.available_stocks <= remaining_milk_needed:
+                    remaining_milk_needed -= entry.available_stocks
+                    entry.available_stocks = 0
                     entry.status = "used"
                 else:
-                    entry.volume_liters -= remaining_milk_needed
+                    entry.available_stocks -= remaining_milk_needed
                     remaining_milk_needed = 0
 
                 entry.save()
@@ -147,9 +157,7 @@ class ProductStock(models.Model):
 
 # Model Histori Perubahan Stok
 class StockHistory(models.Model):
-    
     objects = models.Manager()
-    
     product_stock = models.ForeignKey(ProductStock, on_delete=models.CASCADE)
     change_type = models.CharField(max_length=20, choices=[("sold", "Sold"), ("expired", "Expired")])  # 'Added' atau 'Removed'
     quantity_change = models.IntegerField()

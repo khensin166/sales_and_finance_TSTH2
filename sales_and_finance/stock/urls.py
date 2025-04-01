@@ -6,8 +6,8 @@ from . import views
 urlpatterns = [
     
     # ================================ RAW MILK ========================
-    path("rawmilk", views.RawMilkListCreateView.as_view(), name="rawmilk-view-create"), # GET (all) & POST
-    path("rawmilk/<int:pk>/", views.RawMilkRetrieveUpdateDestroyView.as_view(), name="rawmilk-detail"), # GET (one), PUT, PATCH, DELETE
+    path("raw-milk", views.RawMilkListCreateView.as_view(), name="rawmilk_view_create"), # GET (all) & POST
+    path("raw-milk/<int:pk>/", views.RawMilkRetrieveUpdateDestroyView.as_view(), name="rawmilk_detail"), # GET (one), PUT, PATCH, DELETE
     
     # GET	/rawmilk/	Ambil semua data RawMilk
     # POST	/rawmilk/	Tambah data baru
@@ -19,17 +19,17 @@ urlpatterns = [
 
 
     # ================================ Product Type ========================
-    path("producttype", views.ProductTypeCreateView.as_view(), name="product-type-view-create"), # GET (all) & POST
-    path("producttype/<int:pk>/", views.ProductTypeRetrieveUpdateDestroyView.as_view(), name="product-type-detail"), # GET (one), PUT, PATCH, DELETE
+    path("product-type", views.ProductTypeCreateView.as_view(), name="product_type_view_create"), # GET (all) & POST
+    path("product-type/<int:pk>/", views.ProductTypeRetrieveUpdateDestroyView.as_view(), name="product_type_detail"), # GET (one), PUT, PATCH, DELETE
 
 
     # ================================ Product Stok ========================
-    path("productstock", views.ProductStockCreateView.as_view(), name="product-stock-view-create"), # GET (all) & POST
-    path("productstock/<int:pk>/", views.ProductStockRetrieveUpdateDestroyView.as_view(), name="product-stock-detail"), # GET (one), PUT, PATCH, DELETE
+    path("product-stock", views.ProductStockCreateView.as_view(), name="product_stock_view_create"), # GET (all) & POST
+    path("product-stock/<int:pk>/", views.ProductStockRetrieveUpdateDestroyView.as_view(), name="product_stock_detail"), # GET (one), PUT, PATCH, DELETE
     
     
     # ================================ Sell Product ========================
-    path("sellproduct/", views.SellProductView.as_view(), name="sell-product"),
+    path("sell-product/", views.SellProductView.as_view(), name="sell_product"),
     # Cara menggunakna metode post
     #  {
     #     "product_type_id": 1,
@@ -39,7 +39,7 @@ urlpatterns = [
 
 
     # ================================ Product History ========================
-    path("producthistory", views.StockHistoryCreateView.as_view(), name="product-history-view-create"), # GET (all) & POST
+    path("product-history", views.StockHistoryCreateView.as_view(), name="product_history_view_create"), # GET (all) & POST
 ]
     # Menyajikan file media hanya dalam mode DEBUG
 if settings.DEBUG:

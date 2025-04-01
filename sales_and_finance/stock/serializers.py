@@ -5,7 +5,7 @@ class RawMilkSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = RawMilk
-        fields = ['cow_id', 'production_time', 'expiration_time', 'volume_liters', 'status']
+        fields = ['cow_id', 'production_time', 'expiration_time', 'available_stocks', 'previous_volume', 'status', 'daily_total_id', 'session', 'volume_liters']
 
 
 class ProductTypeSerializer(serializers.ModelSerializer):
