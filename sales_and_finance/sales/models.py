@@ -37,17 +37,22 @@ class Order(models.Model):
     def save(self, *args, **kwargs):
 
         if not self.order_no:
-            self.order_no = f"ORD{uuid.uuid4().hex[:6].upper()}"  # ID unik
+            self.order_no = f"ORD{uuid.uuid4().hex[:6].upper()}"  # ID unik No Orderan
 
-        is_status_changed = self.pk is not None and Order.objects.get(pk=self.pk).status != self.status
+        if self.pk is not None:
+            previous_status = Order.objects.get(pk=self.pk).status
+        else:
+            previous_status = None  # Order baru
 
-        if is_status_changed and self.status == 'Completed':
+        # ✅ Pastikan metode pembayaran harus dipilih sebelum menyelesaikan order
+        if previous_status != "Completed" and self.status == "Completed":
             if not self.payment_method:
                 raise ValidationError("Metode pembayaran harus dipilih sebelum menyelesaikan order.")
 
         super().save(*args, **kwargs)
 
-        if is_status_changed and self.status == 'Completed':
+        # ✅ Proses completion hanya jika status berubah menjadi "Completed"
+        if previous_status != "Completed" and self.status == "Completed":
             self.process_completion()
 
     def update_total_price(self):
@@ -59,7 +64,7 @@ class Order(models.Model):
     def process_completion(self):
         """ Buat transaksi penjualan dan perbarui stok saat pesanan selesai """
         with transaction.atomic():
-            for item in self.order_items.all():
+            for item in self.order_items.all(): # pylint: disable=no-member
                 # Gunakan method sell_product dari ProductStock
                 ProductStock.sell_product(item.product_stock.product_type, item.quantity)
 

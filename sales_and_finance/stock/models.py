@@ -129,9 +129,15 @@ class ProductStock(models.Model):
     @classmethod
     def sell_product(cls, product_type, quantity):
         """ Jual produk berdasarkan FIFO jika tersedia """
-        available_stocks = cls.objects.filter(product_type=product_type, status="available", quantity__gt=0).order_by("production_at")
+        available_stocks = cls.objects.filter(
+            product_type=product_type, 
+            status="available", 
+            quantity__gt=0
+        ).order_by("production_at")
 
         remaining = quantity
+        stock_usage = []  # Untuk tracking penggunaan stock
+
         with transaction.atomic():
             for stock in available_stocks:
                 if remaining <= 0:
@@ -144,16 +150,30 @@ class ProductStock(models.Model):
                 if stock.quantity == 0:
                     stock.status = "sold_out"
 
-                StockHistory.objects.create(
+                # Hitung total harga transaksi
+                total_price = sold_quantity * stock.product_type.price
+
+                # Simpan history penjualan
+                history_entry = StockHistory.objects.create(
                     product_stock=stock,
                     change_type="sold",
-                    quantity_change=sold_quantity
+                    quantity_change=sold_quantity,
+                    total_price=total_price
                 )
+
+                stock_usage.append({
+                    "stock_id": stock.id,
+                    "sold_quantity": sold_quantity,
+                    "history_id": history_entry.id,
+                    "total_price": float(total_price)
+                })
 
                 stock.save()
 
         if remaining > 0:
             raise ValidationError("Stok tidak mencukupi!")
+
+        return stock_usage
 
 # Model Histori Perubahan Stok
 class StockHistory(models.Model):
