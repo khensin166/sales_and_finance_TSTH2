@@ -3,6 +3,7 @@ from django.core.exceptions import ValidationError
 from django.db import transaction
 from django.db import models
 from stock.models import ProductStock, ProductType
+from finance.models import Income
 
 
 # Create your models here.
@@ -112,6 +113,17 @@ class SalesTransaction(models.Model):
     payment_method = models.CharField(max_length=20, choices=Order.PAYMENT_METHOD_CHOICES, blank=True, null=True)
     
     objects = models.Manager()
+
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
+
+        # Jika transaksi belum ada di income, tambahkan otomatis
+        if not Income.objects.filter(description=f"Sales Transaction {self.pk}").exists(): # pylint: disable=no-member
+            Income.objects.create(
+                income_type="sales",
+                amount=self.total_price,
+                description=f"Sales Transaction {self.pk}"
+            )
 
     def __str__(self):
         return f"Transaction {self.pk} - Order {self.order.order_no} - {self.payment_method}" # pylint: disable=no-member
