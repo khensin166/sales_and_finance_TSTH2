@@ -2,7 +2,7 @@ import uuid
 from django.core.exceptions import ValidationError
 from django.db import transaction
 from django.db import models
-from stock.models import ProductStock
+from stock.models import ProductStock, ProductType
 
 
 # Create your models here.
@@ -66,14 +66,14 @@ class Order(models.Model):
         with transaction.atomic():
             for item in self.order_items.all(): # pylint: disable=no-member
                 # Gunakan method sell_product dari ProductStock
-                ProductStock.sell_product(item.product_stock.product_type, item.quantity)
+                ProductStock.sell_product(item.product_type, item.quantity)
 
                 # Buat transaksi penjualan
                 SalesTransaction.objects.create(
                     order=self,
-                    product_stock=item.product_stock,
                     quantity=item.quantity,
-                    total_price=item.total_price
+                    total_price=item.total_price,
+                    payment_method=self.payment_method
                 )
 
     def __str__(self):
@@ -83,7 +83,7 @@ class Order(models.Model):
 class OrderItem(models.Model):
     """ Menyimpan setiap produk yang dipesan dalam order """
     order = models.ForeignKey(Order, on_delete=models.CASCADE, related_name="order_items")
-    product_stock = models.ForeignKey(ProductStock, on_delete=models.CASCADE)
+    product_type = models.ForeignKey(ProductType, on_delete=models.CASCADE)
     quantity = models.PositiveIntegerField()
     price_per_unit = models.DecimalField(max_digits=10, decimal_places=2)
     total_price = models.DecimalField(max_digits=10, decimal_places=2, editable=False)
@@ -92,7 +92,7 @@ class OrderItem(models.Model):
 
     def save(self, *args, **kwargs):
         """ Hitung total harga sebelum menyimpan """
-        self.price_per_unit = self.product_stock.product_type.price   # pylint: disable=no-member
+        self.price_per_unit = self.product_type.price   # pylint: disable=no-member
         self.total_price = self.quantity * self.price_per_unit
         super().save(*args, **kwargs)
 
@@ -101,17 +101,17 @@ class OrderItem(models.Model):
 
 
     def __str__(self):
-        return f"{self.quantity} x {self.product_stock} in {self.order.order_no}" # pylint: disable=no-member
+        return f"{self.quantity} x {self.product_type} in {self.order.order_no}" # pylint: disable=no-member
 
 class SalesTransaction(models.Model):
     """ Menyimpan transaksi penjualan yang dihasilkan dari Order """
     order = models.ForeignKey(Order, on_delete=models.CASCADE, related_name='transactions')
-    product_stock = models.ForeignKey(ProductStock, on_delete=models.CASCADE)
     transaction_date = models.DateTimeField(auto_now_add=True)
     quantity = models.PositiveIntegerField()
     total_price = models.DecimalField(max_digits=10, decimal_places=2)
+    payment_method = models.CharField(max_length=20, choices=Order.PAYMENT_METHOD_CHOICES, blank=True, null=True)
     
     objects = models.Manager()
 
     def __str__(self):
-        return f"Transaction {self.pk} - Order {self.order.order_no}" # pylint: disable=no-member
+        return f"Transaction {self.pk} - Order {self.order.order_no} - {self.payment_method}" # pylint: disable=no-member

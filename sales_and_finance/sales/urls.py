@@ -19,12 +19,12 @@ urlpatterns = [
     #     "shipping_cost": 5000,
     #     "order_items": [
     #         {
-    #             "product_stock": 1,
+    #             "product_type": 1,
     #             "quantity": 2,
     #             "price_per_unit": 10000
     #         },
     #         {
-    #             "product_stock": 2,
+    #             "product_type": 2,
     #             "quantity": 1,
     #             "price_per_unit": 5000
     #         }
