@@ -24,6 +24,10 @@ class OrderSerializer(serializers.ModelSerializer):
 
         # Move create method outside of Meta class
     def create(self, validated_data):
+
+        # Pastikan shipping_cost bisa kosong saat dibuat
+        validated_data.setdefault('shipping_cost', 0)
+
         order_items_data = validated_data.pop('order_items', [])
         
         if not order_items_data:
@@ -63,6 +67,15 @@ class OrderSerializer(serializers.ModelSerializer):
 
 
     def update(self, instance, validated_data):
+        # Ambil data shipping cost saat ini dan yang baru
+        current_shipping_cost = instance.shipping_cost
+        new_shipping_cost = validated_data.get("shipping_cost", current_shipping_cost)
+        shipping_cost_changed = current_shipping_cost != new_shipping_cost
+        
+        # Jika shipping cost diubah dari 0 ke nilai yang lebih besar dan status masih 'Requested'
+        if shipping_cost_changed and instance.status == 'Requested':
+            validated_data['status'] = 'Processed'  # Set status menjadi 'Processed'
+        
         new_status = validated_data.get("status", instance.status)
         payment_method = validated_data.get("payment_method", instance.payment_method)
 
@@ -71,7 +84,7 @@ class OrderSerializer(serializers.ModelSerializer):
                 {"payment_method": "Metode pembayaran harus diisi sebelum menyelesaikan pesanan."}
             )
 
-        # **🔍 Validasi stok sebelum menyimpan**
+        # Validasi stok sebelum menyimpan
         if new_status == "Completed":
             for item in instance.order_items.all():
                 total_stock = ProductStock.objects.filter(product_type=item.product_type).aggregate(total=Sum('quantity'))['total'] or 0
@@ -80,9 +93,14 @@ class OrderSerializer(serializers.ModelSerializer):
                         {"error": f"Stok untuk {item.product_type} tidak mencukupi!"}
                     )
 
-        # ✅ Update hanya jika stok cukup
+        # Update attributes
         for attr, value in validated_data.items():
             setattr(instance, attr, value)
 
+        # Save instance akan memicu method save() di model
+        # yang akan otomatis mengupdate total_price juga
         instance.save()
+        
+        # Refresh instance dari database untuk mendapatkan nilai terbaru
+        instance.refresh_from_db()
         return instance

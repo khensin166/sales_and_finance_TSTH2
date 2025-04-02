@@ -31,6 +31,24 @@ urlpatterns = [
 # }
 
 
+# {
+#     "customer_name": "Kenan Tomfie Bukit",
+#     "email": "kenan@example.com",
+#     "phone_number": "08123456789",
+#     "location": "Jakarta",
+#     "status": "Requested",
+#     "order_items": [
+#         {
+#             "product_type": 1,
+#             "quantity": 2
+#         },
+#         {
+#             "product_type": 2,
+#             "quantity": 1
+#         }
+#     ]
+# }
+
     # GET /orders/{id}/ → Melihat detail order tertentu.
 
     # PUT/PATCH /orders/{id}/ → Mengupdate order (contohnya menambah biaya pengiriman).
