@@ -12,7 +12,8 @@ class OrderItemSerializer(serializers.ModelSerializer):
         read_only_fields = ['total_price'] # Tambahkan product_stock agar tidak bisa diubah setelah dibuat
 
 class OrderSerializer(serializers.ModelSerializer):
-    order_items = OrderItemSerializer(many=True)
+    # Remove read_only=True so we can accept nested order items in create
+    order_items = OrderItemSerializer(many=True, required=False)
 
     class Meta:
         model = Order
@@ -21,39 +22,45 @@ class OrderSerializer(serializers.ModelSerializer):
                   'payment_method', 'created_at', 'order_items']
         read_only_fields = ['order_no', 'total_price']
 
+        # Move create method outside of Meta class
     def create(self, validated_data):
         order_items_data = validated_data.pop('order_items', [])
-
+        
         if not order_items_data:
             raise serializers.ValidationError({"order_items": "Minimal satu item harus dipesan."})
-
-        order_items = []
-
-        # Cek apakah stok cukup untuk setiap item
+        
+        # Create the order first
+        order = Order.objects.create(**validated_data)
+        
+        # Create each order item with proper product_type assignment
         for item_data in order_items_data:
-            product_type = item_data.pop('product_type')  # Ambil product_type
-            product_type_obj = ProductType.objects.get(id=product_type.id)  # Ambil objek
-
+            product_type_obj = item_data.get('product_type')
+            
             # Pastikan stok mencukupi
             total_stock = ProductStock.objects.filter(product_type=product_type_obj).aggregate(total=Sum('quantity'))['total'] or 0
             if item_data['quantity'] > total_stock:
+                # If stock insufficient, delete the order and raise error
+                order.delete()
                 raise serializers.ValidationError({"order_items": f"Stok untuk {product_type_obj} tidak mencukupi."})
-
-            # Jika stok mencukupi, buat objek order_item
-            order_item = OrderItem(**item_data)
-            order_items.append(order_item)
-
-        # Sekarang buat Order karena kita sudah yakin stoknya cukup
-        order = Order.objects.create(**validated_data)
-
-        # Setelah Order dibuat, buat OrderItem dan hitung total harga
-        for order_item in order_items:
-            order_item.order = order
-            order_item.save()  # Simpan OrderItem ke dalam database
-
-        order.total_price = sum(item.total_price for item in order_items) + order.shipping_cost
-        order.save()
+            
+            # Create order item with price_per_unit explicitly set
+            # This is critical because OrderItem.save() uses this value to calculate total_price
+            price_per_unit = product_type_obj.price  # Get price from product_type
+            
+            OrderItem.objects.create(
+                order=order,
+                product_type=product_type_obj,
+                quantity=item_data.get('quantity'),
+                price_per_unit=price_per_unit  # Explicitly set price_per_unit
+            )
+        
+        # Manually update the total price to ensure it's calculated
+        order.update_total_price()
+        
+        # Refresh order to get updated values
+        order.refresh_from_db()
         return order
+
 
     def update(self, instance, validated_data):
         new_status = validated_data.get("status", instance.status)

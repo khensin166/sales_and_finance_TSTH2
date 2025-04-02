@@ -5,8 +5,12 @@ from django.core.exceptions import ValidationError
 # Create your models here.
 # Model Produksi Susu Mentah
 class RawMilk(models.Model):
+
+    class Meta:
+        db_table = "raw_milks"
+        managed = False
+
     objects = models.Manager()
-    
     cow_id = models.IntegerField()
     production_time = models.DateTimeField(default=timezone.now)
     expiration_time = models.DateTimeField(default=timezone.now)  # Bisa diubah saat save()
@@ -19,8 +23,6 @@ class RawMilk(models.Model):
     session = models.IntegerField()
     available_stocks = models.DecimalField(max_digits=10, decimal_places=2, default=0)
 
-    # class Meta:
-    #     db_table = "raw_milks"
     def save(self, *args, **kwargs):
         """Set expiration_time otomatis berdasarkan produksi"""
         if not self.expiration_time:
@@ -33,8 +35,11 @@ class RawMilk(models.Model):
 
 # Model Tipe Produk
 class ProductType(models.Model):
-    objects = models.Manager()
+    
+    class Meta:
+        db_table = "product_type"
 
+    objects = models.Manager()
     product_name = models.CharField(max_length=255)
     product_description = models.TextField(blank=True, null=True)
     image = models.ImageField(upload_to='products/', blank=True, null=True)
@@ -43,16 +48,17 @@ class ProductType(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
-    # class Meta:
-    #     db_table = "product_type"
     def __str__(self):
         return f"{self.product_name}"
 
 
 # Model Stok Produk
 class ProductStock(models.Model):
+    
+    class Meta:
+        db_table = "product_stock"
+    
     objects = models.Manager()
-
     product_type = models.ForeignKey(ProductType, on_delete=models.CASCADE)
     initial_quantity = models.IntegerField()
     quantity = models.IntegerField()
@@ -63,8 +69,6 @@ class ProductStock(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
-    # class Meta:
-    #     db_table = "product_stock"
     def __str__(self):
         return f"{self.product_type}"
 
@@ -177,6 +181,10 @@ class ProductStock(models.Model):
 
 # Model Histori Perubahan Stok
 class StockHistory(models.Model):
+
+    class Meta:
+        db_table = "product_stock_history"
+
     objects = models.Manager()
     product_stock = models.ForeignKey(ProductStock, on_delete=models.CASCADE)
     change_type = models.CharField(max_length=20, choices=[("sold", "Sold"), ("expired", "Expired")])  # 'Added' atau 'Removed'

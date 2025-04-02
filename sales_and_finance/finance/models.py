@@ -3,6 +3,10 @@ from django.utils.timezone import now
 
 # kemudian bagaimana caranya agar ketika ada expense maka data juga akan tertambah ke dalam finance
 class Expense(models.Model):
+    
+    class Meta:
+        db_table = "expense"
+    
     EXPENSE_TYPES = [
         ('operational', 'Operational'),
         ('marketing', 'Marketing'),
@@ -34,6 +38,10 @@ class Expense(models.Model):
 
 
 class Income(models.Model):
+    
+    class Meta:
+        db_table = "income"
+    
     INCOME_TYPES = [
         ('sales', 'Sales'),
         ('investment', 'Investment'),
@@ -64,6 +72,10 @@ class Income(models.Model):
 
 
 class Finance(models.Model):
+    
+    class Meta:
+        db_table = "finance"
+    
     TRANSACTION_TYPES = [
         ('income', 'Income'),
         ('expense', 'Expense'),

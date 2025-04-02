@@ -8,6 +8,10 @@ from finance.models import Income
 
 # Create your models here.
 class Order(models.Model):
+    
+    class Meta:
+        db_table = "order"
+    
     STATUS_CHOICES = [
         ('Requested', 'Requested'),  # Status default ketika order dibuat
         ('Processed', 'Processed'),  # Setelah produk dicek dan biaya pengiriman ditambahkan
@@ -22,6 +26,7 @@ class Order(models.Model):
         ('Bank Transfer', 'Bank Transfer'),
     ]
 
+    objects = models.Manager()
     order_no = models.CharField(max_length=20, unique=True, editable=False)
     customer_name = models.CharField(max_length=255)
     email = models.EmailField(blank=True, null=True)
@@ -33,7 +38,6 @@ class Order(models.Model):
     payment_method = models.CharField(max_length=20, choices=PAYMENT_METHOD_CHOICES, blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
-    objects = models.Manager()
 
     def save(self, *args, **kwargs):
 
@@ -63,33 +67,39 @@ class Order(models.Model):
         super().save(update_fields=['total_price'])
 
     def process_completion(self):
-        """ Buat transaksi penjualan dan perbarui stok saat pesanan selesai """
+        """ Buat satu transaksi penjualan dan perbarui stok saat pesanan selesai """
         with transaction.atomic():
+            # Update stok untuk setiap item
+            total_quantity = 0
             for item in self.order_items.all(): # pylint: disable=no-member
                 # Gunakan method sell_product dari ProductStock
                 ProductStock.sell_product(item.product_type, item.quantity)
-
-                # Buat transaksi penjualan
-                SalesTransaction.objects.create(
-                    order=self,
-                    quantity=item.quantity,
-                    total_price=item.total_price,
-                    payment_method=self.payment_method
-                )
+                total_quantity += item.quantity
+            
+            # Buat satu transaksi penjualan untuk seluruh order
+            SalesTransaction.objects.create(
+                order=self,
+                quantity=total_quantity,
+                total_price=self.total_price,
+                payment_method=self.payment_method
+            )
 
     def __str__(self):
         return f"Order {self.order_no} - {self.customer_name}"
 
 
 class OrderItem(models.Model):
-    """ Menyimpan setiap produk yang dipesan dalam order """
+    
+    class Meta:
+        db_table = "order_item"
+
+    objects = models.Manager()
     order = models.ForeignKey(Order, on_delete=models.CASCADE, related_name="order_items")
     product_type = models.ForeignKey(ProductType, on_delete=models.CASCADE)
     quantity = models.PositiveIntegerField()
     price_per_unit = models.DecimalField(max_digits=10, decimal_places=2)
     total_price = models.DecimalField(max_digits=10, decimal_places=2, editable=False)
 
-    objects = models.Manager()
 
     def save(self, *args, **kwargs):
         """ Hitung total harga sebelum menyimpan """
@@ -105,15 +115,17 @@ class OrderItem(models.Model):
         return f"{self.quantity} x {self.product_type} in {self.order.order_no}" # pylint: disable=no-member
 
 class SalesTransaction(models.Model):
-    """ Menyimpan transaksi penjualan yang dihasilkan dari Order """
+    
+    class Meta:
+        db_table = "sales_transaction"
+
+    objects = models.Manager()
     order = models.ForeignKey(Order, on_delete=models.CASCADE, related_name='transactions')
     transaction_date = models.DateTimeField(auto_now_add=True)
     quantity = models.PositiveIntegerField()
     total_price = models.DecimalField(max_digits=10, decimal_places=2)
     payment_method = models.CharField(max_length=20, choices=Order.PAYMENT_METHOD_CHOICES, blank=True, null=True)
     
-    objects = models.Manager()
-
     def save(self, *args, **kwargs):
         super().save(*args, **kwargs)
 
