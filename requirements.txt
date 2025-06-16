@@ -8,8 +8,6 @@ django-celery-beat==2.7.0
 gunicorn==23.0.0
 whitenoise==6.9.0
 
-# Database connector
-PyMySQL==1.1.1
 
 # Celery / Redis
 celery==5.4.0
