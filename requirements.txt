@@ -112,7 +112,6 @@ Pygments==2.19.1
 pyHanko==0.26.0
 pyhanko-certvalidator==0.26.8
 PyJWT==2.10.1
-PyMySQL==1.1.1
 pyparsing==3.2.3
 pypdf==5.4.0
 pyphen==0.17.2
