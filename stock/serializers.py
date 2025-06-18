@@ -1,3 +1,4 @@
+# stock/serializers.py
 from rest_framework import serializers
 from django.conf import settings
 from .models import ProductType, ProductStock, StockHistory, User

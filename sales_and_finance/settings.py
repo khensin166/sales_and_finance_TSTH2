@@ -49,7 +49,7 @@ GUPSHUP_API_KEY = 'sk_49b512570561442898bf2a6cb4b4c001'
 GUPSHUP_SOURCE_NUMBER = '917834811114'
 
 # pengaturan untuk menjalankan tugas di latar belakang
-BACKGROUND_TASK_RUN_ASYNC = True
+# BACKGROUND_TASK_RUN_ASYNC = True
 # Application definition
 
 INSTALLED_APPS = [

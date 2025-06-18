@@ -4129,3 +4129,34 @@ INFO 2025-06-16 08:12:14,825 basehttp "GET /sales/orders/ HTTP/1.1" 200 3893
 INFO 2025-06-16 08:12:17,945 basehttp "GET /product-stock HTTP/1.1" 200 5090
 INFO 2025-06-16 08:12:45,631 basehttp "GET /finance/finance/ HTTP/1.1" 200 529
 INFO 2025-06-16 08:12:46,797 basehttp "GET /finance/incomes/ HTTP/1.1" 200 375
+INFO 2025-06-18 08:30:47,949 autoreload Watching for file changes with StatReloader
+INFO 2025-06-18 09:16:42,052 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\tasks.py changed, reloading.
+INFO 2025-06-18 09:16:54,305 autoreload Watching for file changes with StatReloader
+INFO 2025-06-18 09:19:06,972 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\apps.py changed, reloading.
+INFO 2025-06-18 09:19:09,009 autoreload Watching for file changes with StatReloader
+INFO 2025-06-18 09:19:15,931 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\apps.py changed, reloading.
+INFO 2025-06-18 09:19:17,927 autoreload Watching for file changes with StatReloader
+INFO 2025-06-18 09:19:29,526 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\tasks.py changed, reloading.
+INFO 2025-06-18 09:19:31,767 autoreload Watching for file changes with StatReloader
+INFO 2025-06-18 09:19:50,754 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\views.py changed, reloading.
+INFO 2025-06-18 09:19:52,662 autoreload Watching for file changes with StatReloader
+INFO 2025-06-18 09:23:09,965 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\serializers.py changed, reloading.
+INFO 2025-06-18 09:23:11,933 autoreload Watching for file changes with StatReloader
+INFO 2025-06-18 09:23:14,670 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\serializers.py changed, reloading.
+INFO 2025-06-18 09:23:16,709 autoreload Watching for file changes with StatReloader
+INFO 2025-06-18 09:24:34,965 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\sales_and_finance\settings.py changed, reloading.
+INFO 2025-06-18 09:24:36,859 autoreload Watching for file changes with StatReloader
+INFO 2025-06-18 09:25:15,434 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\apps.py changed, reloading.
+INFO 2025-06-18 09:25:16,689 autoreload Watching for file changes with StatReloader
+WARNING 2025-06-18 10:04:37,464 log Not Found: /
+WARNING 2025-06-18 10:04:37,550 basehttp "GET / HTTP/1.1" 404 5019
+WARNING 2025-06-18 10:04:37,780 log Not Found: /favicon.ico
+WARNING 2025-06-18 10:04:37,780 basehttp "GET /favicon.ico HTTP/1.1" 404 5070
+INFO 2025-06-18 11:01:43,582 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\models.py changed, reloading.
+INFO 2025-06-18 11:01:48,325 autoreload Watching for file changes with StatReloader
+INFO 2025-06-18 11:03:04,863 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\models.py changed, reloading.
+INFO 2025-06-18 11:03:07,517 autoreload Watching for file changes with StatReloader
+INFO 2025-06-18 11:06:16,878 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\models.py changed, reloading.
+INFO 2025-06-18 11:06:19,521 autoreload Watching for file changes with StatReloader
+INFO 2025-06-18 11:06:27,369 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\models.py changed, reloading.
+INFO 2025-06-18 11:06:29,904 autoreload Watching for file changes with StatReloader

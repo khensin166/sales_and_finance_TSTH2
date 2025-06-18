@@ -1,14 +1,13 @@
+# stock/tasks.py
 from django.utils import timezone
 from django.db import transaction
-from background_task import background # pylint: disable=import-error
 from stock.models import ProductStock, StockHistory, User
 from notifications.models import Notification
 from datetime import timedelta
 import logging
 
-logger = logging.getLogger('stock')  # Gunakan logger 'stock' sesuai settings.py
+logger = logging.getLogger('stock')
 
-@background(schedule=60)
 def check_product_expiration():
     try:
         logger.info("Starting product expiration check at %s WIB", timezone.now().astimezone(timezone.get_current_timezone()))
@@ -24,7 +23,6 @@ def check_product_expiration():
             logger.info("No available products to process")
             return
         
-        # Ambil admin (misalnya, role_id=1)
         admins = User.objects.filter(role_id=1)
         if not admins.exists():
             logger.error("No admin users found for notifications")
@@ -37,7 +35,6 @@ def check_product_expiration():
                 logger.debug("Checking product %s: expiry_at=%s, time_to_expiry=%s", 
                              product.id, expiry_wib, time_to_expiry)
                 
-                # Check if expiration is within 4 hours
                 if time_to_expiry <= timedelta(hours=4) and time_to_expiry > timedelta(hours=2):
                     if not Notification.objects.filter(
                         product_stock=product,
@@ -55,7 +52,6 @@ def check_product_expiration():
                             )
                             logger.info("Sent 4-hour warning for product %s to user %s", product.id, admin.id)
                 
-                # Check if expiration is within 2 hours
                 elif time_to_expiry <= timedelta(hours=2) and time_to_expiry > timedelta(seconds=0):
                     if not Notification.objects.filter(
                         product_stock=product,
@@ -73,7 +69,6 @@ def check_product_expiration():
                             )
                             logger.info("Sent 2-hour warning for product %s to user %s", product.id, admin.id)
                 
-                # Check if product has expired
                 elif product.expiry_at <= now:
                     product.status = "expired"
                     StockHistory.objects.create(
@@ -98,7 +93,6 @@ def check_product_expiration():
                             )
                             logger.info("Marked product %s as expired and notified user %s", product.id, admin.id)
             
-            # Check products expired more than 2 hours ago
             long_expired_products = ProductStock.objects.filter(
                 status="expired",
                 expiry_at__lt=two_hours_ago

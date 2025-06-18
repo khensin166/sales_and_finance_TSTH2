@@ -633,3 +633,14 @@ INFO 2025-06-13 16:29:00,590 tasks Found 4 available products to check
 INFO 2025-06-13 16:29:00,862 tasks Found 1 products expired more than 2 hours ago
 INFO 2025-06-13 16:29:00,905 tasks Found 4 available products to check
 INFO 2025-06-13 16:29:01,191 tasks Found 1 products expired more than 2 hours ago
+INFO 2025-06-18 09:36:47,879 check_expiration Running check_expiration command
+INFO 2025-06-18 09:36:47,893 tasks Starting product expiration check at 2025-06-18 09:36:47.879797+07:00 WIB
+INFO 2025-06-18 09:36:48,480 tasks Found 5 available products to check
+INFO 2025-06-18 09:36:49,371 tasks Marked product 29 as expired and notified user 2
+INFO 2025-06-18 09:36:50,116 tasks Marked product 32 as expired and notified user 2
+INFO 2025-06-18 09:36:50,607 tasks Marked product 35 as expired and notified user 2
+INFO 2025-06-18 09:36:50,700 tasks Found 5 products expired more than 2 hours ago
+INFO 2025-06-18 09:36:50,949 tasks Sent long expired notification for product 29 to user 2
+INFO 2025-06-18 09:36:51,206 tasks Sent long expired notification for product 31 to user 2
+INFO 2025-06-18 09:36:51,491 tasks Sent long expired notification for product 32 to user 2
+INFO 2025-06-18 09:36:51,670 tasks Sent long expired notification for product 35 to user 2
