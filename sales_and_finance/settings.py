@@ -61,7 +61,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # add depedencies
     'rest_framework',
-    'background_task',
+    # 'background_task',
     # 'stock',
     'stock.apps.StockConfig',
     'sales',

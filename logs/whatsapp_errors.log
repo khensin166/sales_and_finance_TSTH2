@@ -4160,3 +4160,5 @@ INFO 2025-06-18 11:06:16,878 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales
 INFO 2025-06-18 11:06:19,521 autoreload Watching for file changes with StatReloader
 INFO 2025-06-18 11:06:27,369 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\models.py changed, reloading.
 INFO 2025-06-18 11:06:29,904 autoreload Watching for file changes with StatReloader
+INFO 2025-06-18 11:15:43,571 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\sales_and_finance\settings.py changed, reloading.
+INFO 2025-06-18 11:15:45,121 autoreload Watching for file changes with StatReloader
