@@ -644,3 +644,21 @@ INFO 2025-06-18 09:36:50,949 tasks Sent long expired notification for product 29
 INFO 2025-06-18 09:36:51,206 tasks Sent long expired notification for product 31 to user 2
 INFO 2025-06-18 09:36:51,491 tasks Sent long expired notification for product 32 to user 2
 INFO 2025-06-18 09:36:51,670 tasks Sent long expired notification for product 35 to user 2
+INFO 2025-06-19 20:27:36,932 views Cron trigger endpoint called at 2025-06-19 20:27:36.920678+07:00 WIB
+INFO 2025-06-19 20:27:36,934 tasks Starting product expiration check at 2025-06-19 20:27:36.934655+07:00 WIB
+INFO 2025-06-19 20:27:37,377 tasks Found 1 available products to check
+INFO 2025-06-19 20:27:37,616 tasks Found 5 products expired more than 2 hours ago
+INFO 2025-06-19 20:27:37,995 views Cron job completed successfully
+INFO 2025-06-19 20:33:10,659 views Cron trigger endpoint called at 2025-06-19 20:33:10.659116+07:00 WIB
+INFO 2025-06-19 20:33:10,659 tasks Starting product expiration check at 2025-06-19 20:33:10.659116+07:00 WIB
+INFO 2025-06-19 20:33:11,200 tasks Found 3 available products to check
+INFO 2025-06-19 20:33:11,798 tasks Marked product 36 as expired and notified user 2
+INFO 2025-06-19 20:33:12,188 tasks Marked product 37 as expired and notified user 2
+INFO 2025-06-19 20:33:12,237 tasks Found 5 products expired more than 2 hours ago
+INFO 2025-06-19 20:33:12,651 views Cron job completed successfully
+INFO 2025-06-19 20:50:54,023 views Cron trigger endpoint called at 2025-06-19 20:50:54.020631+07:00 WIB
+INFO 2025-06-19 20:50:54,023 tasks Starting product expiration check at 2025-06-19 20:50:54.023637+07:00 WIB
+INFO 2025-06-19 20:50:54,406 tasks Found 2 available products to check
+INFO 2025-06-19 20:50:54,796 tasks Sent 4-hour warning for product 38 to user 2
+INFO 2025-06-19 20:50:54,861 tasks Found 5 products expired more than 2 hours ago
+INFO 2025-06-19 20:50:55,256 views Cron job completed successfully

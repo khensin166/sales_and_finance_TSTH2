@@ -164,6 +164,20 @@ DATABASES = {
 }
 
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'tthsanbe_t5th',
+#         'USER': 'tthsanbe_TA',
+#         'PASSWORD': 'Cy2U0x1JJRFY',
+#         'HOST': '178.248.73.218',
+#         'PORT': '3306',
+#         'OPTIONS': {
+#             'charset': 'utf8mb4',
+#         },
+#     }
+# }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators

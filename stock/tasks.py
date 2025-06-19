@@ -1,4 +1,3 @@
-# stock/tasks.py
 from django.utils import timezone
 from django.db import transaction
 from stock.models import ProductStock, StockHistory, User
@@ -12,7 +11,6 @@ def check_product_expiration():
     try:
         logger.info("Starting product expiration check at %s WIB", timezone.now().astimezone(timezone.get_current_timezone()))
         now = timezone.now()
-        four_hours = now + timedelta(hours=4)
         two_hours = now + timedelta(hours=2)
         two_hours_ago = now - timedelta(hours=2)
         
@@ -35,7 +33,7 @@ def check_product_expiration():
                 logger.debug("Checking product %s: expiry_at=%s, time_to_expiry=%s", 
                              product.id, expiry_wib, time_to_expiry)
                 
-                if time_to_expiry <= timedelta(hours=4) and time_to_expiry > timedelta(hours=2):
+                if time_to_expiry <= timedelta(hours=4) and time_to_expiry > timedelta(seconds=0):
                     if not Notification.objects.filter(
                         product_stock=product,
                         type='EXPIRY_WARN_4H',
@@ -45,29 +43,12 @@ def check_product_expiration():
                             Notification.objects.create(
                                 product_stock=product,
                                 user_id=admin.id,
-                                message=f"Produk {product.product_type} expires in less than 4 hours on {expiry_wib.strftime('%Y-%m-%d %H:%M:%S %Z')}!",
+                                message=f"Produk {product.product_type} akan kadaluarsa dalam waktu kurang dari 4 jam pada {expiry_wib.strftime('%Y-%m-%d %H:%M:%S %Z')}! Harap segera diproses!",
                                 type='EXPIRY_WARN_4H',
                                 is_read=False,
                                 created_at_wib=timezone.now().astimezone(timezone.get_current_timezone())
                             )
                             logger.info("Sent 4-hour warning for product %s to user %s", product.id, admin.id)
-                
-                elif time_to_expiry <= timedelta(hours=2) and time_to_expiry > timedelta(seconds=0):
-                    if not Notification.objects.filter(
-                        product_stock=product,
-                        type='EXPIRY_WARN_2H',
-                        is_read=False
-                    ).exists():
-                        for admin in admins:
-                            Notification.objects.create(
-                                product_stock=product,
-                                user_id=admin.id,
-                                message=f"Produk {product.product_type} expires in less than 2 hours on {expiry_wib.strftime('%Y-%m-%d %H:%M:%S %Z')}!",
-                                type='EXPIRY_WARN_2H',
-                                is_read=False,
-                                created_at_wib=timezone.now().astimezone(timezone.get_current_timezone())
-                            )
-                            logger.info("Sent 2-hour warning for product %s to user %s", product.id, admin.id)
                 
                 elif product.expiry_at <= now:
                     product.status = "expired"
