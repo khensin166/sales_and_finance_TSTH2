@@ -57,7 +57,7 @@ class ProductType(models.Model):
     objects = models.Manager()
     created_by = models.ForeignKey(User, on_delete=models.CASCADE, related_name="product_type_created")
     updated_by = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True, related_name="product_type_updated")
-    product_name = models.CharField(max_length=255)
+    product_name = models.CharField(max_length=255, unique=True)
     product_description = models.TextField(blank=True, null=True)
     image = models.ImageField(upload_to='products/', blank=True, null=True)
     price = models.DecimalField(max_digits=10, decimal_places=2)
@@ -160,32 +160,6 @@ class ProductStock(models.Model):
                     quantity_change=self.quantity,
                     total_price=0.0
                 )
-
-    # @classmethod
-    # def check_expired_products(cls):
-    #     """Otomatis set produk expired jika sudah melewati tanggal kadaluarsa dan kirim notifikasi"""
-    #     from notifications.models import Notification  # Impor di dalam method untuk menghindari circular import
-    #     expired_products = cls.objects.filter(expiry_at__lt=timezone.now(), status="available")
-        
-    #     with transaction.atomic():
-    #         for product in expired_products:
-    #             product.status = "expired"
-    #             StockHistory.objects.create(
-    #                 product_stock=product,
-    #                 change_type="expired",
-    #                 quantity_change=product.quantity
-    #             )
-    #             product.save()
-
-    #             # Kirim notifikasi bahwa produk telah kadaluarsa
-    #             Notification.objects.create(
-    #                 product_stock=product,
-    #                 user_id=2,  # Ganti dengan ID pengguna yang sesuai
-    #                 message=f"Produk {product.product_type} telah kadaluarsa pada {product.expiry_at}!",
-    #                 type='PRODUCT_EXPIRED',
-    #                 is_read=False
-    #             )
-
     @classmethod
     def check_expired_products(cls):
         """Otomatis set produk expired jika sudah melewati tanggal kadaluarsa dan kirim notifikasi"""

@@ -4175,3 +4175,28 @@ INFO 2025-06-19 20:50:51,181 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales
 INFO 2025-06-19 20:50:52,555 autoreload Watching for file changes with StatReloader
 INFO 2025-06-19 20:50:55,256 basehttp "POST /trigger-cron/ HTTP/1.1" 200 62
 INFO 2025-06-19 21:04:39,509 basehttp "POST /trigger-cron/ HTTP/1.1" 200 62
+INFO 2025-06-20 14:08:39,991 autoreload Watching for file changes with StatReloader
+WARNING 2025-06-20 14:08:49,628 log Not Found: /
+WARNING 2025-06-20 14:08:49,646 basehttp "GET / HTTP/1.1" 404 5286
+INFO 2025-06-20 14:09:04,824 basehttp "GET /product-type HTTP/1.1" 200 20916
+INFO 2025-06-20 14:09:56,285 basehttp "GET /product-type/34 HTTP/1.1" 301 0
+INFO 2025-06-20 14:09:56,925 basehttp "GET /product-type/34/ HTTP/1.1" 200 18732
+INFO 2025-06-20 14:10:13,905 basehttp "PUT /product-type/34/ HTTP/1.1" 200 17951
+INFO 2025-06-20 14:10:30,936 basehttp "GET /product-type HTTP/1.1" 200 20733
+INFO 2025-06-20 14:10:39,774 basehttp "GET /product-type/38 HTTP/1.1" 301 0
+INFO 2025-06-20 14:10:40,411 basehttp "GET /product-type/38/ HTTP/1.1" 200 18846
+INFO 2025-06-20 14:11:37,398 basehttp "PUT /product-type/38/ HTTP/1.1" 200 17989
+INFO 2025-06-20 14:16:28,537 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\serializers.py changed, reloading.
+INFO 2025-06-20 14:16:29,945 autoreload Watching for file changes with StatReloader
+INFO 2025-06-20 14:16:32,575 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\serializers.py changed, reloading.
+INFO 2025-06-20 14:16:33,809 autoreload Watching for file changes with StatReloader
+INFO 2025-06-20 14:22:42,045 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\serializers.py changed, reloading.
+INFO 2025-06-20 14:22:43,432 autoreload Watching for file changes with StatReloader
+INFO 2025-06-20 14:22:53,763 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\serializers.py changed, reloading.
+INFO 2025-06-20 14:22:55,309 autoreload Watching for file changes with StatReloader
+INFO 2025-06-20 14:24:06,472 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\serializers.py changed, reloading.
+INFO 2025-06-20 14:24:07,816 autoreload Watching for file changes with StatReloader
+INFO 2025-06-20 14:24:10,489 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\serializers.py changed, reloading.
+INFO 2025-06-20 14:24:11,802 autoreload Watching for file changes with StatReloader
+INFO 2025-06-20 14:25:19,541 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\serializers.py changed, reloading.
+INFO 2025-06-20 14:25:20,839 autoreload Watching for file changes with StatReloader

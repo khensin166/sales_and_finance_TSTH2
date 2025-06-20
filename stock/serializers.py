@@ -1,4 +1,5 @@
 # stock/serializers.py
+import os
 from rest_framework import serializers
 from django.conf import settings
 from .models import ProductType, ProductStock, StockHistory, User
@@ -19,6 +20,20 @@ class ProductTypeSerializer(serializers.ModelSerializer):
         fields = ['id', 'product_name', 'product_description', 'image', 'price', 'unit', 
                   'created_at', 'updated_at', 'created_by', 'updated_by', 
                   'created_by_detail', 'updated_by_detail']
+
+    def validate_image(self, value):
+        """
+        Validate that the uploaded image has an allowed file extension.
+        """
+        if value:
+            # Define allowed image extensions
+            allowed_extensions = ['.jpg', '.jpeg', '.png', '.gif', '.bmp']
+            ext = os.path.splitext(value.name)[1].lower()
+            if ext not in allowed_extensions:
+                raise serializers.ValidationError(
+                    f"Invalid image format. Allowed formats are: {', '.join(allowed_extensions)}."
+                )
+        return value
 
     def to_internal_value(self, data):
         data = data.copy()
@@ -57,6 +72,28 @@ class ProductTypeSerializer(serializers.ModelSerializer):
         representation['created_by'] = representation.pop('created_by_detail')
         representation['updated_by'] = representation.pop('updated_by_detail')
         return representation
+    
+    def create(self, validated_data):
+        """
+        Handle creation with proper error handling for duplicate product_name.
+        """
+        try:
+            return super().create(validated_data)
+        except IntegrityError:
+            raise serializers.ValidationError({
+                "error": "A product with this name already exists."
+            })
+
+    def update(self, instance, validated_data):
+        """
+        Handle update with proper error handling for duplicate product_name.
+        """
+        try:
+            return super().update(instance, validated_data)
+        except IntegrityError:
+            raise serializers.ValidationError({
+                "error": "A product with this name already exists."
+            })
 
 class ProductStockSerializer(serializers.ModelSerializer):
     product_type_detail = serializers.SerializerMethodField()
