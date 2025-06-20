@@ -34,9 +34,8 @@ class ProductTypeCreateView(generics.ListCreateAPIView):
                 "data": ProductTypeSerializer(instance).data
             }, status=201)
         except serializers.ValidationError as e:
-            return Response({
-                "error": str(e)
-            }, status=400)
+            # Return error dictionary as-is
+            return Response(e.detail, status=400)
 
     def create(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
@@ -56,9 +55,8 @@ class ProductTypeRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView
                 "data": ProductTypeSerializer(instance).data
             }, status=200)
         except serializers.ValidationError as e:
-            return Response({
-                "error": str(e)
-            }, status=400)
+            # Return error dictionary as-is
+            return Response(e.detail, status=400)
 
     def perform_destroy(self, instance):
         try:

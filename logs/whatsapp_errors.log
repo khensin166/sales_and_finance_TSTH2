@@ -4200,3 +4200,965 @@ INFO 2025-06-20 14:24:10,489 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales
 INFO 2025-06-20 14:24:11,802 autoreload Watching for file changes with StatReloader
 INFO 2025-06-20 14:25:19,541 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\serializers.py changed, reloading.
 INFO 2025-06-20 14:25:20,839 autoreload Watching for file changes with StatReloader
+INFO 2025-06-20 14:30:04,646 basehttp "GET /product-type HTTP/1.1" 200 2089
+INFO 2025-06-20 14:30:04,982 basehttp "GET /media/products/susucoklat_PvO6tuq.jpg HTTP/1.1" 200 5610
+INFO 2025-06-20 14:30:04,982 basehttp "GET /media/products/1000439974.jpg HTTP/1.1" 200 13275
+INFO 2025-06-20 14:30:04,983 basehttp "GET /media/products/butter.jpg HTTP/1.1" 200 4156
+INFO 2025-06-20 14:30:04,983 basehttp "GET /media/products/strawberry_LXKnE3j.jpg HTTP/1.1" 200 4839
+INFO 2025-06-20 14:30:04,984 basehttp "GET /media/products/vanila.jpg HTTP/1.1" 200 86456
+WARNING 2025-06-20 14:30:53,472 log Bad Request: /product-type
+WARNING 2025-06-20 14:30:53,473 basehttp "POST /product-type HTTP/1.1" 400 72
+WARNING 2025-06-20 14:31:00,659 log Bad Request: /product-type
+WARNING 2025-06-20 14:31:00,660 basehttp "POST /product-type HTTP/1.1" 400 72
+WARNING 2025-06-20 14:31:11,327 log Bad Request: /product-type
+WARNING 2025-06-20 14:31:11,329 basehttp "POST /product-type HTTP/1.1" 400 72
+WARNING 2025-06-20 14:31:43,113 log Bad Request: /product-type
+WARNING 2025-06-20 14:31:43,114 basehttp "POST /product-type HTTP/1.1" 400 72
+INFO 2025-06-20 14:33:35,037 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\serializers.py changed, reloading.
+INFO 2025-06-20 14:33:36,676 autoreload Watching for file changes with StatReloader
+WARNING 2025-06-20 14:33:45,597 log Bad Request: /product-type
+WARNING 2025-06-20 14:33:45,598 basehttp "POST /product-type HTTP/1.1" 400 72
+INFO 2025-06-20 14:36:09,570 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\serializers.py changed, reloading.
+INFO 2025-06-20 14:36:11,097 autoreload Watching for file changes with StatReloader
+INFO 2025-06-20 14:36:50,294 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\serializers.py changed, reloading.
+INFO 2025-06-20 14:36:52,137 autoreload Watching for file changes with StatReloader
+INFO 2025-06-20 14:37:17,707 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\serializers.py changed, reloading.
+INFO 2025-06-20 14:37:19,077 autoreload Watching for file changes with StatReloader
+INFO 2025-06-20 14:37:21,821 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\serializers.py changed, reloading.
+INFO 2025-06-20 14:37:23,711 autoreload Watching for file changes with StatReloader
+WARNING 2025-06-20 14:37:26,520 log Bad Request: /product-type
+WARNING 2025-06-20 14:37:26,521 basehttp "POST /product-type HTTP/1.1" 400 72
+WARNING 2025-06-20 14:37:35,275 log Bad Request: /product-type
+WARNING 2025-06-20 14:37:35,276 basehttp "POST /product-type HTTP/1.1" 400 72
+INFO 2025-06-20 14:37:52,859 basehttp "GET /product-type HTTP/1.1" 200 2089
+INFO 2025-06-20 14:37:53,194 basehttp "GET /media/products/butter.jpg HTTP/1.1" 304 0
+INFO 2025-06-20 14:37:53,194 basehttp "GET /media/products/vanila.jpg HTTP/1.1" 304 0
+WARNING 2025-06-20 14:38:12,205 log Bad Request: /product-type
+WARNING 2025-06-20 14:38:12,207 basehttp "POST /product-type HTTP/1.1" 400 72
+INFO 2025-06-20 14:38:35,823 autoreload Watching for file changes with StatReloader
+WARNING 2025-06-20 14:38:43,083 log Bad Request: /product-type
+WARNING 2025-06-20 14:38:43,085 basehttp "POST /product-type HTTP/1.1" 400 72
+INFO 2025-06-20 14:46:48,433 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\serializers.py changed, reloading.
+INFO 2025-06-20 14:46:49,743 autoreload Watching for file changes with StatReloader
+INFO 2025-06-20 14:46:52,510 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\serializers.py changed, reloading.
+INFO 2025-06-20 14:46:53,752 autoreload Watching for file changes with StatReloader
+INFO 2025-06-20 14:46:58,550 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\serializers.py changed, reloading.
+INFO 2025-06-20 14:46:59,966 autoreload Watching for file changes with StatReloader
+WARNING 2025-06-20 14:47:06,393 log Bad Request: /product-type
+WARNING 2025-06-20 14:47:06,395 basehttp "POST /product-type HTTP/1.1" 400 72
+INFO 2025-06-20 14:47:30,318 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\serializers.py changed, reloading.
+INFO 2025-06-20 14:47:33,207 autoreload Watching for file changes with StatReloader
+WARNING 2025-06-20 14:47:37,384 log Bad Request: /product-type
+WARNING 2025-06-20 14:47:37,385 basehttp "POST /product-type HTTP/1.1" 400 72
+INFO 2025-06-20 14:48:03,067 autoreload Watching for file changes with StatReloader
+INFO 2025-06-20 14:48:34,507 basehttp "GET /product-type HTTP/1.1" 200 2089
+INFO 2025-06-20 14:48:34,850 basehttp "GET /media/products/vanila.jpg HTTP/1.1" 304 0
+INFO 2025-06-20 14:48:34,851 basehttp "GET /media/products/butter.jpg HTTP/1.1" 304 0
+WARNING 2025-06-20 14:49:00,340 log Bad Request: /product-type
+WARNING 2025-06-20 14:49:00,341 basehttp "POST /product-type HTTP/1.1" 400 72
+INFO 2025-06-20 14:51:49,088 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\sales_and_finance\settings.py changed, reloading.
+INFO 2025-06-20 14:52:03,854 autoreload Watching for file changes with StatReloader
+WARNING 2025-06-20 14:52:11,167 log Bad Request: /product-type
+WARNING 2025-06-20 14:52:11,169 basehttp "POST /product-type HTTP/1.1" 400 72
+WARNING 2025-06-20 14:52:46,877 log Not Found: /
+WARNING 2025-06-20 14:52:46,878 basehttp "GET / HTTP/1.1" 404 5286
+WARNING 2025-06-20 14:52:47,055 log Not Found: /favicon.ico
+WARNING 2025-06-20 14:52:47,056 basehttp "GET /favicon.ico HTTP/1.1" 404 5337
+INFO 2025-06-20 14:52:54,563 basehttp "GET /product-type HTTP/1.1" 200 20550
+INFO 2025-06-20 14:52:54,611 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2025-06-20 14:52:54,615 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2025-06-20 14:52:54,616 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2025-06-20 14:52:54,620 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2025-06-20 14:52:54,636 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2025-06-20 14:52:54,636 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2025-06-20 14:52:54,638 basehttp "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2025-06-20 14:52:54,644 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2025-06-20 14:52:54,644 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2025-06-20 14:52:54,645 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2025-06-20 14:52:54,647 basehttp "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2025-06-20 14:52:54,648 basehttp "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+WARNING 2025-06-20 14:53:21,767 log Bad Request: /product-type
+WARNING 2025-06-20 14:53:21,768 basehttp "POST /product-type HTTP/1.1" 400 15936
+INFO 2025-06-20 14:54:06,802 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\serializers.py changed, reloading.
+INFO 2025-06-20 14:54:08,255 autoreload Watching for file changes with StatReloader
+INFO 2025-06-20 14:54:14,327 autoreload Watching for file changes with StatReloader
+WARNING 2025-06-20 14:54:25,262 log Bad Request: /product-type
+WARNING 2025-06-20 14:54:25,263 basehttp "POST /product-type HTTP/1.1" 400 15885
+WARNING 2025-06-20 14:54:38,947 log Bad Request: /product-type
+WARNING 2025-06-20 14:54:38,948 basehttp "POST /product-type HTTP/1.1" 400 72
+INFO 2025-06-20 14:56:12,709 basehttp "GET /product-type HTTP/1.1" 200 2089
+INFO 2025-06-20 14:56:13,071 basehttp "GET /media/products/butter.jpg HTTP/1.1" 304 0
+INFO 2025-06-20 14:56:13,071 basehttp "GET /media/products/vanila.jpg HTTP/1.1" 304 0
+INFO 2025-06-20 14:58:07,079 basehttp "GET /product-stock HTTP/1.1" 200 8668
+INFO 2025-06-20 15:00:50,397 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\serializers.py changed, reloading.
+INFO 2025-06-20 15:00:51,839 autoreload Watching for file changes with StatReloader
+INFO 2025-06-20 15:00:54,598 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\serializers.py changed, reloading.
+INFO 2025-06-20 15:00:56,209 autoreload Watching for file changes with StatReloader
+INFO 2025-06-20 15:01:58,951 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\views.py changed, reloading.
+INFO 2025-06-20 15:02:00,344 autoreload Watching for file changes with StatReloader
+INFO 2025-06-20 15:02:05,202 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\views.py changed, reloading.
+INFO 2025-06-20 15:02:06,657 autoreload Watching for file changes with StatReloader
+WARNING 2025-06-20 15:02:23,458 log Bad Request: /product-type
+WARNING 2025-06-20 15:02:23,459 basehttp "POST /product-type HTTP/1.1" 400 15785
+WARNING 2025-06-20 15:02:46,985 log Bad Request: /product-type
+WARNING 2025-06-20 15:02:46,986 basehttp "POST /product-type HTTP/1.1" 400 103
+WARNING 2025-06-20 15:02:56,602 log Bad Request: /product-type
+WARNING 2025-06-20 15:02:56,603 basehttp "POST /product-type HTTP/1.1" 400 103
+WARNING 2025-06-20 15:03:10,848 log Bad Request: /product-type
+WARNING 2025-06-20 15:03:10,850 basehttp "POST /product-type HTTP/1.1" 400 57
+INFO 2025-06-20 15:04:40,489 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\views.py changed, reloading.
+INFO 2025-06-20 15:04:41,850 autoreload Watching for file changes with StatReloader
+WARNING 2025-06-20 15:06:45,445 log Bad Request: /product-type
+WARNING 2025-06-20 15:06:45,446 basehttp "POST /product-type HTTP/1.1" 400 103
+WARNING 2025-06-20 15:06:55,539 log Bad Request: /product-type
+WARNING 2025-06-20 15:06:55,539 basehttp "POST /product-type HTTP/1.1" 400 57
+INFO 2025-06-20 15:07:26,893 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\serializers.py changed, reloading.
+INFO 2025-06-20 15:07:29,931 autoreload Watching for file changes with StatReloader
+WARNING 2025-06-20 15:07:33,428 log Bad Request: /product-type
+WARNING 2025-06-20 15:07:33,430 basehttp "POST /product-type HTTP/1.1" 400 54
+WARNING 2025-06-20 15:07:48,251 log Bad Request: /product-type
+WARNING 2025-06-20 15:07:48,252 basehttp "POST /product-type HTTP/1.1" 400 54
+INFO 2025-06-20 15:08:16,948 basehttp "OPTIONS /product-type/35/ HTTP/1.1" 200 0
+WARNING 2025-06-20 15:08:17,601 log Bad Request: /product-type/35/
+WARNING 2025-06-20 15:08:17,602 basehttp "PUT /product-type/35/ HTTP/1.1" 400 54
+INFO 2025-06-20 15:10:17,381 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\serializers.py changed, reloading.
+INFO 2025-06-20 15:10:18,719 autoreload Watching for file changes with StatReloader
+INFO 2025-06-20 15:11:16,999 basehttp "POST /product-type HTTP/1.1" 201 363
+INFO 2025-06-20 15:11:18,119 basehttp "GET /product-type HTTP/1.1" 200 2456
+INFO 2025-06-20 15:11:18,532 basehttp "GET /media/products/SertifikatAirAsia_2.jpg HTTP/1.1" 200 354110
+INFO 2025-06-20 15:11:27,154 basehttp "OPTIONS /product-type/41/ HTTP/1.1" 200 0
+INFO 2025-06-20 15:11:27,860 basehttp "DELETE /product-type/41/ HTTP/1.1" 204 47
+INFO 2025-06-20 15:11:28,938 basehttp "GET /product-type HTTP/1.1" 200 2089
+INFO 2025-06-20 15:11:36,946 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\serializers.py changed, reloading.
+INFO 2025-06-20 15:11:38,765 autoreload Watching for file changes with StatReloader
+INFO 2025-06-20 15:11:59,476 basehttp "GET /media/products/vanila.jpg HTTP/1.1" 304 0
+INFO 2025-06-20 15:11:59,476 basehttp "GET /media/products/butter.jpg HTTP/1.1" 304 0
+INFO 2025-06-20 15:15:06,298 basehttp "GET /product-type HTTP/1.1" 200 2089
+INFO 2025-06-20 15:18:10,440 basehttp "OPTIONS /product-type/38/ HTTP/1.1" 200 0
+INFO 2025-06-20 15:18:11,134 basehttp "PUT /product-type/38/ HTTP/1.1" 200 477
+INFO 2025-06-20 15:18:12,133 basehttp "GET /product-type HTTP/1.1" 200 2168
+INFO 2025-06-20 15:19:13,355 basehttp "POST /product-type HTTP/1.1" 201 354
+INFO 2025-06-20 15:19:14,410 basehttp "GET /product-type HTTP/1.1" 200 2526
+INFO 2025-06-20 15:19:14,820 basehttp "GET /media/products/SertifikatAirAsia_2.jpg HTTP/1.1" 200 354110
+INFO 2025-06-20 15:19:19,679 basehttp "OPTIONS /product-type/42/ HTTP/1.1" 200 0
+INFO 2025-06-20 15:19:20,327 basehttp "DELETE /product-type/42/ HTTP/1.1" 204 47
+INFO 2025-06-20 15:19:21,636 basehttp "GET /product-type HTTP/1.1" 200 2168
+INFO 2025-06-20 15:20:32,846 basehttp "GET /product-stock HTTP/1.1" 200 8668
+INFO 2025-06-20 15:20:33,730 basehttp "GET /product-type HTTP/1.1" 200 2168
+INFO 2025-06-20 15:20:52,937 basehttp "GET /product-type HTTP/1.1" 200 2168
+INFO 2025-06-20 15:21:07,319 basehttp "GET /product-type HTTP/1.1" 200 2168
+INFO 2025-06-20 15:21:07,681 basehttp "GET /media/products/1000439974.jpg HTTP/1.1" 200 13275
+INFO 2025-06-20 15:21:07,682 basehttp "GET /media/products/butter.jpg HTTP/1.1" 200 4156
+INFO 2025-06-20 15:21:07,683 basehttp "GET /media/products/susucoklat_PvO6tuq.jpg HTTP/1.1" 200 5610
+INFO 2025-06-20 15:21:07,683 basehttp "GET /media/products/strawberry_LXKnE3j.jpg HTTP/1.1" 200 4839
+INFO 2025-06-20 15:21:07,684 basehttp "GET /media/products/vanila.jpg HTTP/1.1" 200 86456
+INFO 2025-06-20 15:21:27,369 basehttp "GET /product-type HTTP/1.1" 200 2168
+INFO 2025-06-20 15:21:27,393 basehttp "GET /media/products/vanila.jpg HTTP/1.1" 304 0
+INFO 2025-06-20 15:21:27,394 basehttp "GET /media/products/butter.jpg HTTP/1.1" 304 0
+INFO 2025-06-20 16:05:57,518 basehttp "GET /product-stock HTTP/1.1" 200 8668
+INFO 2025-06-20 16:05:58,427 basehttp "GET /product-type HTTP/1.1" 200 2168
+INFO 2025-06-20 16:06:16,536 basehttp "GET /finance/expenses/ HTTP/1.1" 200 461
+INFO 2025-06-20 16:06:16,729 basehttp "GET /finance/incomes/ HTTP/1.1" 200 2045
+INFO 2025-06-20 16:06:17,008 basehttp "GET /finance/expense-types/ HTTP/1.1" 200 346
+INFO 2025-06-20 16:06:17,107 basehttp "GET /finance/income-types/ HTTP/1.1" 200 924
+INFO 2025-06-20 16:06:20,287 basehttp "GET /product-type HTTP/1.1" 200 2168
+INFO 2025-06-20 16:06:21,242 basehttp "GET /product-type HTTP/1.1" 200 2168
+INFO 2025-06-20 16:06:21,992 basehttp "GET /product-stock HTTP/1.1" 200 8668
+INFO 2025-06-20 16:06:27,145 basehttp "GET /product-stock HTTP/1.1" 200 8668
+INFO 2025-06-20 16:06:28,106 basehttp "GET /product-type HTTP/1.1" 200 2168
+INFO 2025-06-20 16:07:58,840 basehttp "GET /product-history/ HTTP/1.1" 200 3570
+INFO 2025-06-20 16:08:09,955 basehttp "GET /product-history/export/pdf/ HTTP/1.1" 200 5812
+INFO 2025-06-20 16:09:32,539 basehttp "GET /product-history/?change_type=contamination HTTP/1.1" 200 190
+INFO 2025-06-20 16:09:37,859 basehttp "GET /product-history/ HTTP/1.1" 200 3570
+INFO 2025-06-20 16:10:43,121 basehttp "GET /sales/orders/ HTTP/1.1" 200 6451
+INFO 2025-06-20 16:10:43,480 basehttp "GET /product-stock HTTP/1.1" 200 8668
+INFO 2025-06-20 16:10:52,456 basehttp "GET /product-stock HTTP/1.1" 200 8668
+INFO 2025-06-20 16:10:54,000 basehttp "GET /product-history/ HTTP/1.1" 200 3570
+INFO 2025-06-20 16:10:57,098 basehttp "GET /product-stock HTTP/1.1" 200 8668
+INFO 2025-06-20 16:10:58,595 basehttp "GET /sales/orders/ HTTP/1.1" 200 6451
+INFO 2025-06-20 16:11:00,096 basehttp "GET /product-stock HTTP/1.1" 200 8668
+INFO 2025-06-20 16:11:32,146 basehttp "GET /product-stock HTTP/1.1" 200 8668
+INFO 2025-06-20 16:11:32,515 basehttp "GET /media/products/butter.jpg HTTP/1.1" 304 0
+INFO 2025-06-20 16:11:33,083 basehttp "GET /product-type HTTP/1.1" 200 2168
+INFO 2025-06-20 16:11:43,488 basehttp "GET /sales/orders/ HTTP/1.1" 200 6451
+INFO 2025-06-20 16:11:43,667 basehttp "GET /product-stock HTTP/1.1" 200 8668
+INFO 2025-06-20 16:12:07,366 basehttp "OPTIONS /sales/orders/43/ HTTP/1.1" 200 0
+INFO 2025-06-20 16:12:12,595 basehttp "PUT /sales/orders/43/ HTTP/1.1" 200 853
+INFO 2025-06-20 16:12:15,649 basehttp "GET /sales/orders/ HTTP/1.1" 200 6472
+INFO 2025-06-20 16:12:18,342 basehttp "GET /product-stock HTTP/1.1" 200 8667
+INFO 2025-06-20 16:12:21,985 basehttp "GET /product-history/ HTTP/1.1" 200 3754
+INFO 2025-06-20 16:14:39,546 basehttp "GET /product-history/ HTTP/1.1" 200 3754
+INFO 2025-06-20 16:15:08,489 basehttp "GET /product-history/ HTTP/1.1" 200 3754
+INFO 2025-06-20 16:15:17,630 basehttp "GET /product-history/ HTTP/1.1" 200 3754
+INFO 2025-06-20 16:15:26,466 basehttp "GET /product-history/?change_type=sold HTTP/1.1" 200 185
+INFO 2025-06-20 16:15:34,322 basehttp "GET /product-history/ HTTP/1.1" 200 3754
+INFO 2025-06-20 16:18:22,009 basehttp "GET /product-history/export/pdf/ HTTP/1.1" 200 6003
+INFO 2025-06-20 16:18:27,838 basehttp "GET /product-history/export/pdf/ HTTP/1.1" 200 6003
+INFO 2025-06-20 16:27:44,461 basehttp "GET /product-history/ HTTP/1.1" 200 3754
+INFO 2025-06-20 16:29:28,596 basehttp "GET /product-history/?start_date=2025-05-20&end_date=2025-06-20 HTTP/1.1" 200 3570
+INFO 2025-06-20 16:35:19,944 basehttp "GET /product-history/?start_date=2025-05-20&end_date=2025-06-20 HTTP/1.1" 200 3570
+INFO 2025-06-20 16:36:59,936 basehttp "GET /product-history/ HTTP/1.1" 200 3754
+INFO 2025-06-20 16:38:28,124 basehttp "GET /product-history/?start_date=2025-05-20&end_date=2025-06-20 HTTP/1.1" 200 3570
+INFO 2025-06-20 16:38:30,949 basehttp "GET /product-history/?start_date=2025-05-20&end_date=2025-06-20 HTTP/1.1" 200 3570
+INFO 2025-06-20 16:38:33,829 basehttp "GET /product-history/export/pdf/?start_date=2025-05-20&end_date=2025-06-20 HTTP/1.1" 200 5923
+INFO 2025-06-20 16:39:05,108 basehttp "GET /product-history/export/excel/?start_date=2025-05-20&end_date=2025-06-20 HTTP/1.1" 200 5904
+INFO 2025-06-20 16:39:20,801 basehttp "GET /product-history/?start_date=2025-05-20&end_date=2025-06-21 HTTP/1.1" 200 3754
+INFO 2025-06-20 16:39:55,769 basehttp "GET /product-type HTTP/1.1" 200 2168
+INFO 2025-06-20 16:39:56,128 basehttp "GET /media/products/butter.jpg HTTP/1.1" 304 0
+INFO 2025-06-20 16:39:56,128 basehttp "GET /media/products/vanila.jpg HTTP/1.1" 304 0
+INFO 2025-06-20 16:40:35,053 basehttp "GET /product-history/?start_date=2025-05-20&end_date=2025-06-20 HTTP/1.1" 200 3570
+INFO 2025-06-20 16:40:40,666 basehttp "GET /product-type HTTP/1.1" 200 2168
+INFO 2025-06-20 16:40:44,920 basehttp "GET /product-history/?start_date=2025-05-20&end_date=2025-06-20 HTTP/1.1" 200 3570
+INFO 2025-06-20 16:41:16,684 basehttp "GET /product-history/?start_date=2025-05-20&end_date=2025-06-20 HTTP/1.1" 200 3570
+INFO 2025-06-20 16:41:19,475 basehttp "GET /product-history/?start_date=2025-05-20&end_date=2025-06-20 HTTP/1.1" 200 3570
+INFO 2025-06-20 16:41:26,024 basehttp "GET /product-history/?start_date=2025-05-20&end_date=2025-06-20 HTTP/1.1" 200 3570
+INFO 2025-06-20 16:41:29,860 basehttp "GET /product-history/?start_date=2025-05-20&end_date=2025-06-20 HTTP/1.1" 200 3570
+INFO 2025-06-20 16:41:32,696 basehttp "GET /product-history/?start_date=2025-05-20&end_date=2025-06-20 HTTP/1.1" 200 3570
+INFO 2025-06-20 16:41:34,519 basehttp "GET /product-type HTTP/1.1" 200 2168
+INFO 2025-06-20 16:41:37,950 basehttp "GET /product-stock HTTP/1.1" 200 8667
+INFO 2025-06-20 16:41:38,888 basehttp "GET /product-type HTTP/1.1" 200 2168
+INFO 2025-06-20 16:41:43,034 basehttp "GET /product-type HTTP/1.1" 200 2168
+INFO 2025-06-20 16:41:46,094 basehttp "GET /product-history/?start_date=2025-05-20&end_date=2025-06-20 HTTP/1.1" 200 3570
+INFO 2025-06-20 16:41:50,144 basehttp "GET /product-history/export/pdf/?start_date=2025-05-20&end_date=2025-06-20 HTTP/1.1" 200 5923
+INFO 2025-06-20 16:43:19,314 basehttp "GET /product-stock HTTP/1.1" 200 8667
+INFO 2025-06-20 16:43:19,483 basehttp "GET /sales/orders/ HTTP/1.1" 200 6472
+INFO 2025-06-20 16:43:29,727 basehttp "GET /finance/expenses/ HTTP/1.1" 200 461
+INFO 2025-06-20 16:43:30,470 basehttp "GET /finance/expense-types/ HTTP/1.1" 200 346
+INFO 2025-06-20 16:43:30,471 basehttp "GET /finance/incomes/ HTTP/1.1" 200 2419
+INFO 2025-06-20 16:43:30,597 basehttp "GET /finance/income-types/ HTTP/1.1" 200 924
+INFO 2025-06-20 16:43:41,097 basehttp "GET /sales/orders/ HTTP/1.1" 200 6472
+INFO 2025-06-20 16:43:41,448 basehttp "GET /product-stock HTTP/1.1" 200 8667
+INFO 2025-06-20 16:50:04,297 basehttp "GET /product-history/?start_date=2025-05-20&end_date=2025-06-20 HTTP/1.1" 200 3570
+ERROR 2025-06-20 16:50:06,308 log Internal Server Error: /product-history/export/pdf/
+Traceback (most recent call last):
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\views_export.py", line 39, in export_pdf
+    template = get_template("pdf/history_report.html")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 563, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 285: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2025-06-20 16:50:06,315 basehttp "GET /product-history/export/pdf/?start_date=2025-05-20&end_date=2025-06-20 HTTP/1.1" 500 29250
+INFO 2025-06-20 16:50:22,187 autoreload Watching for file changes with StatReloader
+INFO 2025-06-20 16:50:34,204 basehttp "GET /product-type HTTP/1.1" 200 2168
+INFO 2025-06-20 16:50:37,483 basehttp "GET /product-history/?start_date=2025-05-20&end_date=2025-06-20 HTTP/1.1" 200 3570
+ERROR 2025-06-20 16:50:39,028 log Internal Server Error: /product-history/export/pdf/
+Traceback (most recent call last):
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\views_export.py", line 39, in export_pdf
+    template = get_template("pdf/history_report.html")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 563, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 285: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2025-06-20 16:50:39,033 basehttp "GET /product-history/export/pdf/?start_date=2025-05-20&end_date=2025-06-20 HTTP/1.1" 500 29250
+INFO 2025-06-20 16:50:50,857 basehttp "GET /product-history/?start_date=2025-05-20&end_date=2025-06-20 HTTP/1.1" 200 3570
+INFO 2025-06-20 16:50:55,107 basehttp "GET /product-history/export/excel/?start_date=2025-05-20&end_date=2025-06-20 HTTP/1.1" 200 5903
+INFO 2025-06-20 16:51:06,728 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\sales_and_finance\wsgi.py changed, reloading.
+INFO 2025-06-20 16:51:08,343 autoreload Watching for file changes with StatReloader
+ERROR 2025-06-20 16:51:12,573 log Internal Server Error: /product-history/export/pdf/
+Traceback (most recent call last):
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\views_export.py", line 39, in export_pdf
+    template = get_template("pdf/history_report.html")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 563, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 53: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2025-06-20 16:51:12,580 basehttp "GET /product-history/export/pdf/?start_date=2025-05-20&end_date=2025-06-20 HTTP/1.1" 500 29120
+INFO 2025-06-20 16:51:19,220 basehttp "GET /product-history/?start_date=2025-05-20&end_date=2025-06-20 HTTP/1.1" 200 3570
+INFO 2025-06-20 16:51:28,958 basehttp "GET /product-history/?start_date=2025-05-20&end_date=2025-06-20 HTTP/1.1" 200 3570
+ERROR 2025-06-20 16:51:52,923 log Internal Server Error: /product-history/export/pdf/
+Traceback (most recent call last):
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\views_export.py", line 39, in export_pdf
+    template = get_template("pdf/history_report.html")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 563, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 53: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2025-06-20 16:51:52,926 basehttp "GET /product-history/export/pdf/?start_date=2025-05-20&end_date=2025-06-20 HTTP/1.1" 500 29120
+INFO 2025-06-20 16:52:05,209 basehttp "GET /product-history/?start_date=2025-05-20&end_date=2025-06-20 HTTP/1.1" 200 3570
+ERROR 2025-06-20 16:52:11,652 log Internal Server Error: /product-history/export/pdf/
+Traceback (most recent call last):
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\views_export.py", line 39, in export_pdf
+    template = get_template("pdf/history_report.html")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 563, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 53: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2025-06-20 16:52:11,655 basehttp "GET /product-history/export/pdf/?start_date=2025-05-20&end_date=2025-06-20 HTTP/1.1" 500 29140
+INFO 2025-06-20 16:54:15,219 basehttp "GET /product-history/?start_date=2025-05-20&end_date=2025-06-20 HTTP/1.1" 200 3570
+ERROR 2025-06-20 16:54:17,214 log Internal Server Error: /product-history/export/pdf/
+Traceback (most recent call last):
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\views_export.py", line 39, in export_pdf
+    template = get_template("pdf/history_report.html")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 563, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 53: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2025-06-20 16:54:17,217 basehttp "GET /product-history/export/pdf/?start_date=2025-05-20&end_date=2025-06-20 HTTP/1.1" 500 29120
+INFO 2025-06-20 16:56:40,941 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\models.py changed, reloading.
+INFO 2025-06-20 16:56:42,604 autoreload Watching for file changes with StatReloader
+INFO 2025-06-20 16:57:00,460 autoreload Watching for file changes with StatReloader
+INFO 2025-06-20 16:57:22,871 basehttp code 400, message Bad request version ('À\x13À')
+ERROR 2025-06-20 16:57:22,872 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-06-20 16:57:36,703 basehttp "GET /product-type HTTP/1.1" 200 20754
+ERROR 2025-06-20 16:58:02,731 log Internal Server Error: /product-history/export/pdf/
+Traceback (most recent call last):
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\views_export.py", line 39, in export_pdf
+    template = get_template("pdf/history_report.html")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 563, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 285: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2025-06-20 16:58:02,737 basehttp "GET /product-history/export/pdf/?start_date=2025-04-01&end_date=2025-06-20 HTTP/1.1" 500 182440
+ERROR 2025-06-20 16:58:09,327 log Internal Server Error: /product-history/export/pdf/
+Traceback (most recent call last):
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\views_export.py", line 39, in export_pdf
+    template = get_template("pdf/history_report.html")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 563, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 285: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2025-06-20 16:58:09,330 basehttp "GET /product-history/export/pdf/?start_date=2025-04-01&end_date=2025-06-20 HTTP/1.1" 500 182440
+INFO 2025-06-20 16:58:45,846 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\filters.py changed, reloading.
+INFO 2025-06-20 16:58:47,279 autoreload Watching for file changes with StatReloader
+ERROR 2025-06-20 16:58:52,759 log Internal Server Error: /product-history/export/pdf/
+Traceback (most recent call last):
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\views_export.py", line 39, in export_pdf
+    template = get_template("pdf/history_report.html")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 563, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 53: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2025-06-20 16:58:52,765 basehttp "GET /product-history/export/pdf/?start_date=2025-04-01&end_date=2025-06-20 HTTP/1.1" 500 168579
+INFO 2025-06-20 16:59:19,845 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\views_export.py changed, reloading.
+INFO 2025-06-20 16:59:21,337 autoreload Watching for file changes with StatReloader
+ERROR 2025-06-20 17:01:45,579 log Internal Server Error: /product-history/export/pdf/
+Traceback (most recent call last):
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\views_export.py", line 39, in export_pdf
+    template = get_template("pdf/history_report.html")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 563, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 285: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2025-06-20 17:01:45,584 basehttp "GET /product-history/export/pdf/?start_date=2025-04-01&end_date=2025-06-20 HTTP/1.1" 500 182440
+INFO 2025-06-20 17:03:35,729 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\filters.py changed, reloading.
+INFO 2025-06-20 17:03:37,064 autoreload Watching for file changes with StatReloader
+ERROR 2025-06-20 17:03:40,040 log Internal Server Error: /product-history/export/pdf/
+Traceback (most recent call last):
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\views_export.py", line 39, in export_pdf
+    template = get_template("pdf/history_report.html")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\template\base.py", line 563, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 285: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2025-06-20 17:03:40,045 basehttp "GET /product-history/export/pdf/?start_date=2025-04-01&end_date=2025-06-20 HTTP/1.1" 500 182470
+INFO 2025-06-20 17:04:56,759 basehttp "GET /product-history/export/pdf/?start_date=2025-04-01&end_date=2025-06-20 HTTP/1.1" 200 5923
+ERROR 2025-06-20 17:05:20,364 log Internal Server Error: /product-history/export/pdf/
+Traceback (most recent call last):
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\views_export.py", line 48, in export_pdf
+    pisa_status = pisa.CreatePDF(html, dest=response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\xhtml2pdf\document.py", line 139, in pisaDocument
+    context = pisaStory(
+              ^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\xhtml2pdf\document.py", line 75, in pisaStory
+    pisaParser(src, context, default_css, xhtml, encoding, xml_output)
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\xhtml2pdf\parser.py", line 823, in pisaParser
+    context.parseCSS()
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\xhtml2pdf\context.py", line 690, in parseCSS
+    self.css = self.cssParser.parse(self.cssText)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\xhtml2pdf\w3c\cssParser.py", line 458, in parse
+    src, stylesheet = self._parseStylesheet(src)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\xhtml2pdf\w3c\cssParser.py", line 561, in _parseStylesheet
+    src, atResults = self._parseAtKeyword(src)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\xhtml2pdf\w3c\cssParser.py", line 683, in _parseAtKeyword
+    src, result = self._parseAtPage(src)
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\xhtml2pdf\w3c\cssParser.py", line 793, in _parseAtPage
+    stylesheetElements.extend(atResults)
+TypeError: 'NotImplementedType' object is not iterable
+ERROR 2025-06-20 17:05:20,368 basehttp "GET /product-history/export/pdf/?start_date=2025-04-01&end_date=2025-06-20 HTTP/1.1" 500 179773
+ERROR 2025-06-20 17:07:42,336 log Internal Server Error: /product-history/export/pdf/
+Traceback (most recent call last):
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\views_export.py", line 48, in export_pdf
+    pisa_status = pisa.CreatePDF(html, dest=response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\xhtml2pdf\document.py", line 139, in pisaDocument
+    context = pisaStory(
+              ^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\xhtml2pdf\document.py", line 75, in pisaStory
+    pisaParser(src, context, default_css, xhtml, encoding, xml_output)
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\xhtml2pdf\parser.py", line 823, in pisaParser
+    context.parseCSS()
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\xhtml2pdf\context.py", line 690, in parseCSS
+    self.css = self.cssParser.parse(self.cssText)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\xhtml2pdf\w3c\cssParser.py", line 458, in parse
+    src, stylesheet = self._parseStylesheet(src)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\xhtml2pdf\w3c\cssParser.py", line 561, in _parseStylesheet
+    src, atResults = self._parseAtKeyword(src)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\xhtml2pdf\w3c\cssParser.py", line 683, in _parseAtKeyword
+    src, result = self._parseAtPage(src)
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\xhtml2pdf\w3c\cssParser.py", line 793, in _parseAtPage
+    stylesheetElements.extend(atResults)
+TypeError: 'NotImplementedType' object is not iterable
+ERROR 2025-06-20 17:07:42,339 basehttp "GET /product-history/export/pdf/?start_date=2025-04-01&end_date=2025-06-20 HTTP/1.1" 500 179773
+INFO 2025-06-20 17:09:50,603 basehttp "GET /product-history/export/pdf/?start_date=2025-04-01&end_date=2025-06-20 HTTP/1.1" 200 6414
+INFO 2025-06-20 17:10:55,258 basehttp "GET /product-history/?start_date=2025-05-20&end_date=2025-06-20 HTTP/1.1" 200 3570
+INFO 2025-06-20 17:10:59,758 basehttp "GET /product-history/export/pdf/?start_date=2025-05-20&end_date=2025-06-20 HTTP/1.1" 200 6414
+INFO 2025-06-20 17:16:28,747 basehttp "GET /product-history/export/pdf/?start_date=2025-04-01&end_date=2025-06-20 HTTP/1.1" 200 6609
+INFO 2025-06-20 17:17:44,738 basehttp "GET /product-history/export/pdf/?start_date=2025-05-20&end_date=2025-06-20 HTTP/1.1" 200 6401
+INFO 2025-06-20 17:20:51,086 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\views_export.py changed, reloading.
+INFO 2025-06-20 17:20:52,913 autoreload Watching for file changes with StatReloader
+INFO 2025-06-20 17:21:08,089 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\views_export.py changed, reloading.
+INFO 2025-06-20 17:21:09,384 autoreload Watching for file changes with StatReloader
+INFO 2025-06-20 17:21:31,429 autoreload Watching for file changes with StatReloader
+INFO 2025-06-20 17:22:05,715 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\views_export.py changed, reloading.
+INFO 2025-06-20 17:22:07,120 autoreload Watching for file changes with StatReloader
+INFO 2025-06-20 17:22:12,550 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\views_export.py changed, reloading.
+INFO 2025-06-20 17:22:13,932 autoreload Watching for file changes with StatReloader
