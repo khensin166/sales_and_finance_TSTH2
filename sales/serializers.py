@@ -1,6 +1,6 @@
 from django.db.models import Sum
 from rest_framework import serializers
-from .models import Order, OrderItem, ProductType, ProductStock
+from .models import Order, OrderItem, ProductType, ProductStock, SalesTransaction
 from stock.serializers import ProductTypeSerializer
 import logging
 
@@ -154,3 +154,11 @@ class OrderSerializer(serializers.ModelSerializer):
         instance.update_total_price()
         instance.refresh_from_db()
         return instance
+    
+class SalesTransactionSerializer(serializers.ModelSerializer):
+    order = OrderSerializer(read_only=True)
+
+    class Meta:
+        model = SalesTransaction
+        fields = ['id', 'order', 'transaction_date', 'quantity', 'total_price', 'payment_method']
+        read_only_fields = ['id', 'transaction_date', 'quantity', 'total_price', 'order']

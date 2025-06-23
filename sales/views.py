@@ -1,10 +1,13 @@
 from django.db.models import Sum
 from rest_framework import generics
 from rest_framework.response import Response
+from rest_framework import filters
+from django_filters.rest_framework import DjangoFilterBackend # pylint: disable=import-error
 from rest_framework import status
 from rest_framework import serializers
-from .models import Order
-from .serializers import OrderSerializer
+from .models import Order, SalesTransaction
+from .serializers import OrderSerializer, SalesTransactionSerializer
+from .filters import SalesTransactionFilter
 import logging
 
 logger = logging.getLogger(__name__)
@@ -90,3 +93,39 @@ class OrderDetailView(generics.RetrieveUpdateDestroyAPIView):
     def destroy(self, request, *args, **kwargs):
         instance = self.get_object()
         return self.perform_destroy(instance)
+    
+class SalesTransactionListView(generics.ListAPIView):
+    queryset = SalesTransaction.objects.all().order_by('-transaction_date')
+    serializer_class = SalesTransactionSerializer
+    filter_backends = [DjangoFilterBackend, filters.OrderingFilter]
+    filterset_class = SalesTransactionFilter
+    ordering_fields = ['transaction_date']
+    ordering = ['-transaction_date']
+
+    def list(self, request, *args, **kwargs):
+        try:
+            queryset = self.filter_queryset(self.get_queryset())
+            serializer = self.get_serializer(queryset, many=True)
+            logger.info("Successfully retrieved sales transaction list")
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        except Exception as e:
+            logger.error(f"Error retrieving sales transaction list: {str(e)}")
+            return Response({
+                "error": "An unexpected error occurred while retrieving sales transactions."
+            }, status=status.HTTP_400_BAD_REQUEST)
+
+class SalesTransactionDetailView(generics.RetrieveAPIView):
+    queryset = SalesTransaction.objects.all()
+    serializer_class = SalesTransactionSerializer
+
+    def retrieve(self, request, *args, **kwargs):
+        try:
+            instance = self.get_object()
+            serializer = self.get_serializer(instance)
+            logger.info(f"Successfully retrieved sales transaction {instance.id}")
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        except activo as e:
+            logger.error(f"Error retrieving sales transaction {instance.id}: {str(e)}")
+            return Response({
+                "error": "An unexpected error occurred while retrieving the sales transaction."
+            }, status=status.HTTP_400_BAD_REQUEST)

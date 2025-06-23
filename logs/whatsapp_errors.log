@@ -5162,3 +5162,294 @@ INFO 2025-06-20 17:22:05,715 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales
 INFO 2025-06-20 17:22:07,120 autoreload Watching for file changes with StatReloader
 INFO 2025-06-20 17:22:12,550 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\stock\views_export.py changed, reloading.
 INFO 2025-06-20 17:22:13,932 autoreload Watching for file changes with StatReloader
+INFO 2025-06-21 22:23:19,072 autoreload Watching for file changes with StatReloader
+INFO 2025-06-21 22:27:54,330 basehttp "GET /product-type HTTP/1.1" 200 2168
+INFO 2025-06-21 22:27:54,710 basehttp "GET /media/products/butter.jpg HTTP/1.1" 304 0
+INFO 2025-06-21 22:27:54,712 basehttp "GET /media/products/1000439974.jpg HTTP/1.1" 304 0
+INFO 2025-06-21 22:27:54,713 basehttp "GET /media/products/vanila.jpg HTTP/1.1" 304 0
+INFO 2025-06-21 22:27:54,719 basehttp "GET /media/products/susucoklat_PvO6tuq.jpg HTTP/1.1" 304 0
+INFO 2025-06-21 22:27:54,723 basehttp "GET /media/products/strawberry_LXKnE3j.jpg HTTP/1.1" 304 0
+INFO 2025-06-21 22:27:59,098 basehttp "GET /product-stock HTTP/1.1" 200 8667
+INFO 2025-06-21 22:28:00,241 basehttp "GET /product-type HTTP/1.1" 200 2168
+INFO 2025-06-21 22:29:35,110 basehttp "OPTIONS /product-stock/42/ HTTP/1.1" 200 0
+INFO 2025-06-21 22:29:36,284 basehttp "PUT /product-stock/42/ HTTP/1.1" 200 654
+INFO 2025-06-21 22:29:39,129 basehttp "GET /product-stock HTTP/1.1" 200 8667
+INFO 2025-06-21 22:32:29,997 basehttp "DELETE /product-stock/42/ HTTP/1.1" 204 48
+INFO 2025-06-21 22:32:33,138 basehttp "GET /product-stock HTTP/1.1" 200 8011
+INFO 2025-06-21 22:41:06,077 basehttp "GET /product-type HTTP/1.1" 200 2168
+INFO 2025-06-21 22:45:38,908 basehttp "GET /product-stock HTTP/1.1" 200 8011
+INFO 2025-06-21 22:45:40,320 basehttp "GET /product-type HTTP/1.1" 200 2168
+INFO 2025-06-21 22:46:00,932 basehttp "POST /product-stock HTTP/1.1" 201 624
+INFO 2025-06-21 22:46:03,707 basehttp "GET /product-stock HTTP/1.1" 200 8625
+INFO 2025-06-21 22:46:24,748 basehttp "OPTIONS /product-stock/43/ HTTP/1.1" 200 0
+INFO 2025-06-21 22:46:25,829 basehttp "PUT /product-stock/43/ HTTP/1.1" 200 687
+INFO 2025-06-21 22:46:28,284 basehttp "GET /product-stock HTTP/1.1" 200 8688
+INFO 2025-06-21 22:48:27,718 basehttp "GET /product-history/?start_date=2025-05-21&end_date=2025-06-21 HTTP/1.1" 200 3396
+INFO 2025-06-21 22:49:34,268 basehttp "GET /product-stock HTTP/1.1" 200 8688
+INFO 2025-06-21 22:49:34,530 basehttp "GET /sales/orders/ HTTP/1.1" 200 6472
+INFO 2025-06-21 22:56:49,262 basehttp "GET /sales/orders/ HTTP/1.1" 200 6472
+INFO 2025-06-21 22:56:49,900 basehttp "GET /product-stock HTTP/1.1" 200 8688
+INFO 2025-06-21 22:58:02,356 basehttp "OPTIONS /sales/orders/ HTTP/1.1" 200 0
+INFO 2025-06-21 22:58:05,981 basehttp "POST /sales/orders/ HTTP/1.1" 201 852
+INFO 2025-06-21 22:58:09,175 basehttp "GET /sales/orders/ HTTP/1.1" 200 7321
+INFO 2025-06-21 22:58:11,768 basehttp "GET /product-stock HTTP/1.1" 200 8688
+INFO 2025-06-21 22:58:17,843 basehttp "OPTIONS /sales/orders/44/ HTTP/1.1" 200 0
+INFO 2025-06-21 22:58:19,503 basehttp "PUT /sales/orders/44/ HTTP/1.1" 200 851
+INFO 2025-06-21 22:58:22,239 basehttp "GET /sales/orders/ HTTP/1.1" 200 7320
+INFO 2025-06-21 22:58:24,638 basehttp "GET /product-stock HTTP/1.1" 200 8688
+INFO 2025-06-22 16:21:57,361 autoreload Watching for file changes with StatReloader
+INFO 2025-06-22 16:24:17,980 basehttp "GET /finance/expense-types/ HTTP/1.1" 200 346
+INFO 2025-06-22 16:24:18,072 basehttp "GET /finance/expenses/ HTTP/1.1" 200 461
+INFO 2025-06-22 16:24:18,391 basehttp "GET /finance/income-types/ HTTP/1.1" 200 924
+INFO 2025-06-22 16:24:18,843 basehttp "GET /finance/incomes/ HTTP/1.1" 200 2419
+INFO 2025-06-22 16:24:54,036 basehttp "GET /product-stock HTTP/1.1" 200 8688
+INFO 2025-06-22 16:24:54,098 basehttp "GET /sales/orders/ HTTP/1.1" 200 7320
+INFO 2025-06-22 16:24:58,972 basehttp "GET /media/products/vanila.jpg HTTP/1.1" 304 0
+INFO 2025-06-22 16:25:25,929 basehttp "GET /finance/expense-types/ HTTP/1.1" 200 346
+INFO 2025-06-22 16:25:26,227 basehttp "GET /finance/income-types/ HTTP/1.1" 200 924
+INFO 2025-06-22 16:25:26,238 basehttp "GET /finance/expenses/ HTTP/1.1" 200 461
+INFO 2025-06-22 16:25:26,761 basehttp "GET /finance/incomes/ HTTP/1.1" 200 2419
+INFO 2025-06-22 16:25:47,082 basehttp "GET /product-stock HTTP/1.1" 200 8688
+INFO 2025-06-22 16:25:47,199 basehttp "GET /sales/orders/ HTTP/1.1" 200 7320
+INFO 2025-06-22 16:25:54,660 basehttp "GET /finance/expenses/ HTTP/1.1" 200 461
+INFO 2025-06-22 16:25:54,737 basehttp "GET /finance/expense-types/ HTTP/1.1" 200 346
+INFO 2025-06-22 16:25:54,946 basehttp "GET /finance/income-types/ HTTP/1.1" 200 924
+INFO 2025-06-22 16:25:55,106 basehttp "GET /finance/incomes/ HTTP/1.1" 200 2419
+INFO 2025-06-22 16:26:07,687 basehttp "GET /product-history/?start_date=2025-05-22&end_date=2025-06-22 HTTP/1.1" 200 3396
+INFO 2025-06-22 16:26:12,136 basehttp "GET /product-history/export/pdf/?start_date=2025-05-22&end_date=2025-06-22 HTTP/1.1" 200 6399
+INFO 2025-06-22 16:26:35,061 basehttp "GET /product-history/export/excel/?start_date=2025-05-22&end_date=2025-06-22 HTTP/1.1" 200 5888
+INFO 2025-06-22 16:30:02,995 basehttp "GET /finance/expense-types/ HTTP/1.1" 200 346
+INFO 2025-06-22 16:30:02,995 basehttp "GET /finance/expenses/ HTTP/1.1" 200 461
+INFO 2025-06-22 16:30:03,367 basehttp "GET /finance/income-types/ HTTP/1.1" 200 924
+INFO 2025-06-22 16:30:03,613 basehttp "GET /finance/incomes/ HTTP/1.1" 200 2419
+INFO 2025-06-22 16:30:08,426 basehttp "GET /product-stock HTTP/1.1" 200 8688
+INFO 2025-06-22 16:30:08,797 basehttp "GET /media/products/butter.jpg HTTP/1.1" 304 0
+INFO 2025-06-22 16:30:08,797 basehttp "GET /media/products/1000439974.jpg HTTP/1.1" 304 0
+INFO 2025-06-22 16:30:09,788 basehttp "GET /product-type HTTP/1.1" 200 2168
+INFO 2025-06-22 16:30:10,800 basehttp "GET /product-type HTTP/1.1" 200 2168
+INFO 2025-06-22 16:30:15,040 basehttp "GET /product-history/?start_date=2025-05-22&end_date=2025-06-22 HTTP/1.1" 200 3396
+INFO 2025-06-22 16:30:19,483 basehttp "GET /sales/orders/ HTTP/1.1" 200 7320
+INFO 2025-06-22 16:30:19,648 basehttp "GET /product-stock HTTP/1.1" 200 8688
+INFO 2025-06-22 16:30:21,779 basehttp "GET /finance/expenses/ HTTP/1.1" 200 461
+INFO 2025-06-22 16:30:21,785 basehttp "GET /finance/expense-types/ HTTP/1.1" 200 346
+INFO 2025-06-22 16:30:22,185 basehttp "GET /finance/income-types/ HTTP/1.1" 200 924
+INFO 2025-06-22 16:30:22,257 basehttp "GET /finance/incomes/ HTTP/1.1" 200 2419
+INFO 2025-06-22 16:30:25,975 basehttp "GET /finance/expenses/ HTTP/1.1" 200 461
+INFO 2025-06-22 16:30:26,174 basehttp "GET /finance/income-types/ HTTP/1.1" 200 924
+INFO 2025-06-22 16:30:26,264 basehttp "GET /finance/expense-types/ HTTP/1.1" 200 346
+INFO 2025-06-22 16:30:26,624 basehttp "GET /finance/incomes/ HTTP/1.1" 200 2419
+INFO 2025-06-22 16:30:32,229 basehttp "GET /product-stock HTTP/1.1" 200 8688
+INFO 2025-06-22 16:30:33,245 basehttp "GET /product-type HTTP/1.1" 200 2168
+INFO 2025-06-22 16:30:38,444 basehttp "GET /product-history/?start_date=2025-05-22&end_date=2025-06-22 HTTP/1.1" 200 3396
+INFO 2025-06-22 16:34:20,020 basehttp "GET /product-stock HTTP/1.1" 200 8688
+INFO 2025-06-22 16:34:21,085 basehttp "GET /product-type HTTP/1.1" 200 2168
+INFO 2025-06-22 16:37:03,828 basehttp "GET /product-type HTTP/1.1" 200 2168
+INFO 2025-06-22 16:37:05,673 basehttp "GET /product-stock HTTP/1.1" 200 8688
+INFO 2025-06-22 16:37:06,925 basehttp "GET /product-type HTTP/1.1" 200 2168
+INFO 2025-06-22 16:37:10,032 basehttp "GET /product-stock HTTP/1.1" 200 8688
+INFO 2025-06-22 16:37:10,961 basehttp "GET /product-type HTTP/1.1" 200 2168
+INFO 2025-06-22 16:37:18,016 basehttp "GET /product-stock HTTP/1.1" 200 8688
+INFO 2025-06-22 16:37:19,243 basehttp "GET /product-type HTTP/1.1" 200 2168
+INFO 2025-06-22 16:38:44,789 basehttp "GET /product-stock HTTP/1.1" 200 8688
+INFO 2025-06-22 16:38:44,900 basehttp "GET /sales/orders/ HTTP/1.1" 200 7320
+INFO 2025-06-22 16:38:47,782 basehttp "GET /product-history/?start_date=2025-05-22&end_date=2025-06-22 HTTP/1.1" 200 3396
+INFO 2025-06-22 16:39:00,663 basehttp "GET /product-stock HTTP/1.1" 200 8688
+INFO 2025-06-22 16:39:01,662 basehttp "GET /product-type HTTP/1.1" 200 2168
+INFO 2025-06-22 16:39:19,033 basehttp "GET /sales/orders/ HTTP/1.1" 200 7320
+INFO 2025-06-22 16:39:19,088 basehttp "GET /product-stock HTTP/1.1" 200 8688
+INFO 2025-06-22 16:39:22,428 basehttp "GET /product-history/?start_date=2025-05-22&end_date=2025-06-22 HTTP/1.1" 200 3396
+INFO 2025-06-22 16:39:26,586 basehttp "GET /product-stock HTTP/1.1" 200 8688
+INFO 2025-06-22 16:39:27,738 basehttp "GET /product-type HTTP/1.1" 200 2168
+INFO 2025-06-22 16:40:28,509 basehttp "GET /product-history/?start_date=2025-05-22&end_date=2025-06-22 HTTP/1.1" 200 3396
+INFO 2025-06-22 16:41:31,641 basehttp "GET /product-stock HTTP/1.1" 200 8688
+INFO 2025-06-22 16:41:32,992 basehttp "GET /product-type HTTP/1.1" 200 2168
+INFO 2025-06-22 16:41:37,430 basehttp "GET /product-history/?start_date=2025-05-22&end_date=2025-06-22 HTTP/1.1" 200 3396
+INFO 2025-06-22 16:42:00,635 basehttp "GET /product-stock HTTP/1.1" 200 8688
+INFO 2025-06-22 16:42:01,873 basehttp "GET /product-type HTTP/1.1" 200 2168
+INFO 2025-06-22 16:42:17,162 basehttp "GET /product-history/?start_date=2025-05-22&end_date=2025-06-22 HTTP/1.1" 200 3396
+INFO 2025-06-22 16:42:22,084 basehttp "GET /product-stock HTTP/1.1" 200 8688
+INFO 2025-06-22 16:42:22,191 basehttp "GET /sales/orders/ HTTP/1.1" 200 7320
+INFO 2025-06-22 16:43:19,190 basehttp "GET /finance/expense-types/ HTTP/1.1" 200 346
+INFO 2025-06-22 16:43:19,532 basehttp "GET /finance/expenses/ HTTP/1.1" 200 461
+INFO 2025-06-22 16:43:20,079 basehttp "GET /finance/income-types/ HTTP/1.1" 200 924
+INFO 2025-06-22 16:43:20,143 basehttp "GET /finance/incomes/ HTTP/1.1" 200 2419
+INFO 2025-06-22 16:43:46,495 basehttp "GET /finance/expenses/ HTTP/1.1" 200 461
+INFO 2025-06-22 16:43:46,543 basehttp "GET /finance/expense-types/ HTTP/1.1" 200 346
+INFO 2025-06-22 16:43:46,723 basehttp "GET /finance/income-types/ HTTP/1.1" 200 924
+INFO 2025-06-22 16:43:46,918 basehttp "GET /finance/incomes/ HTTP/1.1" 200 2419
+INFO 2025-06-22 16:44:03,700 basehttp "GET /finance/expenses/ HTTP/1.1" 200 461
+INFO 2025-06-22 16:44:04,160 basehttp "GET /product-stock HTTP/1.1" 200 8688
+INFO 2025-06-22 16:44:04,228 basehttp "GET /finance/income-types/ HTTP/1.1" 200 924
+INFO 2025-06-22 16:44:04,284 basehttp "GET /sales/orders/ HTTP/1.1" 200 7320
+INFO 2025-06-22 16:44:04,328 basehttp "GET /finance/expense-types/ HTTP/1.1" 200 346
+INFO 2025-06-22 16:44:04,444 basehttp "GET /finance/incomes/ HTTP/1.1" 200 2419
+INFO 2025-06-22 16:45:29,197 basehttp "GET /finance/expenses/ HTTP/1.1" 200 461
+INFO 2025-06-22 16:45:29,432 basehttp "GET /finance/income-types/ HTTP/1.1" 200 924
+INFO 2025-06-22 16:45:29,513 basehttp "GET /finance/expense-types/ HTTP/1.1" 200 346
+INFO 2025-06-22 16:45:29,569 basehttp "GET /finance/incomes/ HTTP/1.1" 200 2419
+INFO 2025-06-22 16:46:04,223 basehttp "GET /finance/export/pdf/?start_date=&end_date= HTTP/1.1" 200 3409
+INFO 2025-06-22 16:46:45,928 basehttp "GET /finance/expenses/?start_date=2025-06-01&end_date=2025-06-22 HTTP/1.1" 200 461
+INFO 2025-06-22 16:46:45,983 basehttp "GET /finance/expense-types/ HTTP/1.1" 200 346
+INFO 2025-06-22 16:46:46,163 basehttp "GET /finance/incomes/?start_date=2025-06-01&end_date=2025-06-22 HTTP/1.1" 200 2419
+INFO 2025-06-22 16:46:46,163 basehttp "GET /finance/income-types/ HTTP/1.1" 200 924
+INFO 2025-06-22 16:46:52,241 basehttp "GET /finance/expense-types/ HTTP/1.1" 200 346
+INFO 2025-06-22 16:46:52,595 basehttp "GET /finance/expenses/ HTTP/1.1" 200 461
+INFO 2025-06-22 16:46:52,789 basehttp "GET /finance/incomes/ HTTP/1.1" 200 2419
+INFO 2025-06-22 16:46:52,792 basehttp "GET /finance/income-types/ HTTP/1.1" 200 924
+INFO 2025-06-22 16:47:59,867 basehttp "OPTIONS /finance/expense-types/ HTTP/1.1" 200 0
+INFO 2025-06-22 16:48:00,756 basehttp "POST /finance/expense-types/ HTTP/1.1" 201 366
+INFO 2025-06-22 16:48:01,588 basehttp "GET /finance/expense-types/ HTTP/1.1" 200 659
+INFO 2025-06-22 16:48:22,726 basehttp "OPTIONS /finance/expenses/ HTTP/1.1" 200 0
+INFO 2025-06-22 16:48:23,806 basehttp "POST /finance/expenses/ HTTP/1.1" 201 443
+INFO 2025-06-22 16:48:24,523 basehttp "GET /finance/expenses/ HTTP/1.1" 200 855
+INFO 2025-06-22 16:49:47,244 basehttp "OPTIONS /finance/expenses/26/ HTTP/1.1" 200 0
+INFO 2025-06-22 16:49:47,697 basehttp "DELETE /finance/expenses/26/ HTTP/1.1" 204 42
+INFO 2025-06-22 22:02:10,448 autoreload Watching for file changes with StatReloader
+INFO 2025-06-22 22:11:52,071 basehttp "GET /finance/expenses/ HTTP/1.1" 200 461
+INFO 2025-06-22 22:11:52,197 basehttp "GET /finance/expense-types/ HTTP/1.1" 200 659
+INFO 2025-06-22 22:11:52,245 basehttp "GET /finance/income-types/ HTTP/1.1" 200 924
+INFO 2025-06-22 22:11:52,789 basehttp "GET /finance/incomes/ HTTP/1.1" 200 2419
+INFO 2025-06-22 22:24:28,808 basehttp "GET /finance/expenses/ HTTP/1.1" 200 461
+INFO 2025-06-22 22:24:29,297 basehttp "GET /finance/expense-types/ HTTP/1.1" 200 659
+INFO 2025-06-22 22:24:29,426 basehttp "GET /finance/income-types/ HTTP/1.1" 200 924
+INFO 2025-06-22 22:24:30,106 basehttp "GET /finance/incomes/ HTTP/1.1" 200 2419
+INFO 2025-06-22 22:24:42,184 basehttp "GET /finance/expenses/ HTTP/1.1" 200 461
+INFO 2025-06-22 22:24:42,388 basehttp "GET /finance/expense-types/ HTTP/1.1" 200 659
+INFO 2025-06-22 22:24:42,590 basehttp "GET /finance/income-types/ HTTP/1.1" 200 924
+INFO 2025-06-22 22:24:42,779 basehttp "GET /finance/incomes/ HTTP/1.1" 200 2419
+INFO 2025-06-22 22:27:06,862 basehttp "OPTIONS /finance/income-types/ HTTP/1.1" 200 0
+INFO 2025-06-22 22:27:07,944 basehttp "POST /finance/income-types/ HTTP/1.1" 201 355
+INFO 2025-06-22 22:27:09,415 basehttp "GET /finance/income-types/ HTTP/1.1" 200 1227
+INFO 2025-06-22 22:27:19,352 basehttp "OPTIONS /finance/expense-types/ HTTP/1.1" 200 0
+INFO 2025-06-22 22:27:20,253 basehttp "POST /finance/expense-types/ HTTP/1.1" 201 354
+INFO 2025-06-22 22:27:22,134 basehttp "GET /finance/expense-types/ HTTP/1.1" 200 960
+INFO 2025-06-22 22:27:30,711 basehttp "OPTIONS /finance/incomes/ HTTP/1.1" 200 0
+INFO 2025-06-22 22:27:31,658 basehttp "POST /finance/incomes/ HTTP/1.1" 201 459
+INFO 2025-06-22 22:27:33,183 basehttp "GET /finance/incomes/ HTTP/1.1" 200 2830
+INFO 2025-06-22 22:27:43,059 basehttp "OPTIONS /finance/incomes/16/ HTTP/1.1" 200 0
+INFO 2025-06-22 22:27:44,094 basehttp "PUT /finance/incomes/16/ HTTP/1.1" 200 523
+INFO 2025-06-22 22:27:45,526 basehttp "GET /finance/incomes/ HTTP/1.1" 200 2894
+INFO 2025-06-22 22:27:53,707 basehttp "OPTIONS /finance/expenses/ HTTP/1.1" 200 0
+INFO 2025-06-22 22:27:54,691 basehttp "POST /finance/expenses/ HTTP/1.1" 201 466
+INFO 2025-06-22 22:27:55,604 basehttp "GET /finance/expenses/ HTTP/1.1" 200 878
+INFO 2025-06-22 22:28:06,422 basehttp "PUT /finance/incomes/16/ HTTP/1.1" 200 525
+INFO 2025-06-22 22:28:07,891 basehttp "GET /finance/incomes/ HTTP/1.1" 200 2896
+INFO 2025-06-23 11:42:42,147 autoreload Watching for file changes with StatReloader
+INFO 2025-06-23 11:43:07,344 basehttp "GET /sales/sales-transactions HTTP/1.1" 301 0
+INFO 2025-06-23 11:43:09,545 basehttp "GET /sales/sales-transactions/ HTTP/1.1" 200 19053
+WARNING 2025-06-23 11:43:09,863 log Not Found: /favicon.ico
+WARNING 2025-06-23 11:43:09,864 basehttp "GET /favicon.ico HTTP/1.1" 404 5337
+ERROR 2025-06-23 11:43:43,979 log Internal Server Error: /sales/sales-transactions/1/
+Traceback (most recent call last):
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\shortcuts.py", line 86, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+sales.models.SalesTransaction.DoesNotExist: SalesTransaction matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\sales\views.py", line 119, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\shortcuts.py", line 88, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No SalesTransaction matches the given query.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\rest_framework\generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\sales\views.py", line 127, in retrieve
+    logger.error(f"Error retrieving sales transaction {self.id}: {str(e)}")
+                                                       ^^^^^^^
+AttributeError: 'SalesTransactionDetailView' object has no attribute 'id'
+ERROR 2025-06-23 11:43:43,984 basehttp "GET /sales/sales-transactions/1/ HTTP/1.1" 500 137939
+INFO 2025-06-23 11:43:47,325 basehttp "GET /sales/sales-transactions/22/ HTTP/1.1" 200 13099
+INFO 2025-06-23 11:44:01,619 basehttp "GET /sales/sales-transactions/ HTTP/1.1" 200 19053
+WARNING 2025-06-23 11:44:02,703 log Not Found: /sales/sales
+WARNING 2025-06-23 11:44:02,703 basehttp "GET /sales/sales HTTP/1.1" 404 6602
+INFO 2025-06-23 11:44:07,762 basehttp "GET /sales/orders HTTP/1.1" 301 0
+INFO 2025-06-23 11:44:11,922 basehttp "GET /sales/orders/ HTTP/1.1" 200 36136
+INFO 2025-06-23 11:45:44,540 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\sales\serializers.py changed, reloading.
+INFO 2025-06-23 11:45:46,668 autoreload Watching for file changes with StatReloader
+INFO 2025-06-23 11:46:08,353 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\sales\views.py changed, reloading.
+INFO 2025-06-23 11:46:10,339 autoreload Watching for file changes with StatReloader
+INFO 2025-06-23 11:46:20,967 basehttp "GET /sales/sales-transactions/ HTTP/1.1" 200 18342
+INFO 2025-06-23 11:47:41,301 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\sales\views.py changed, reloading.
+INFO 2025-06-23 11:47:42,624 autoreload Watching for file changes with StatReloader
+INFO 2025-06-23 13:04:21,127 autoreload Watching for file changes with StatReloader
+INFO 2025-06-23 13:09:07,355 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\sales\views.py changed, reloading.
+INFO 2025-06-23 13:09:08,621 autoreload Watching for file changes with StatReloader
+INFO 2025-06-23 13:09:11,155 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\sales\views.py changed, reloading.
+INFO 2025-06-23 13:09:12,325 autoreload Watching for file changes with StatReloader
+INFO 2025-06-23 13:26:40,442 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\sales\urls.py changed, reloading.
+INFO 2025-06-23 13:26:42,047 autoreload Watching for file changes with StatReloader
+INFO 2025-06-23 13:26:52,439 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\sales\urls.py changed, reloading.
+INFO 2025-06-23 13:26:54,102 autoreload Watching for file changes with StatReloader
+INFO 2025-06-23 13:28:21,020 autoreload Watching for file changes with StatReloader
+INFO 2025-06-23 13:29:52,868 autoreload Watching for file changes with StatReloader
+INFO 2025-06-23 13:34:49,179 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\sales\views_export.py changed, reloading.
+INFO 2025-06-23 13:34:50,874 autoreload Watching for file changes with StatReloader
+INFO 2025-06-23 13:34:54,281 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\sales\views_export.py changed, reloading.
+INFO 2025-06-23 13:34:55,924 autoreload Watching for file changes with StatReloader
+INFO 2025-06-23 13:37:44,850 basehttp "GET /sales/sales-transactions/export/pdf/?start_date=2025-04-01&end_date=2025-06-20 HTTP/1.1" 200 3038
+INFO 2025-06-23 13:37:52,200 basehttp "GET /sales/sales-transactions/export/pdf/?start_date=2025-04-01&end_date=2025-06-20 HTTP/1.1" 200 3038
+INFO 2025-06-23 13:38:03,121 basehttp "GET /sales/sales-transactions/export/pdf/?start_date=2025-04-01&end_date=2025-06-23 HTTP/1.1" 200 3216
+INFO 2025-06-23 13:38:34,569 basehttp "GET /sales/sales-transactions/?start_date=2025-04-01&end_date=2025-06-23 HTTP/1.1" 200 2984
+INFO 2025-06-23 13:38:50,015 basehttp "GET /sales/sales-transactions/export/pdf/?start_date=2025-04-01&end_date=2025-06-23 HTTP/1.1" 200 3216
+INFO 2025-06-23 13:39:40,374 basehttp "GET /sales/sales-transactions/export/excel/?start_date=2025-04-01&end_date=2025-06-23 HTTP/1.1" 200 5432
+INFO 2025-06-23 13:40:15,160 basehttp "GET /sales/sales-transactions/?start_date=2025-04-01&end_date=2025-06-23 HTTP/1.1" 200 2984
+INFO 2025-06-23 13:41:03,830 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\sales\views.py changed, reloading.
+INFO 2025-06-23 13:41:05,651 autoreload Watching for file changes with StatReloader
+INFO 2025-06-23 13:41:53,022 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\sales\views.py changed, reloading.
+INFO 2025-06-23 13:41:54,617 autoreload Watching for file changes with StatReloader
+INFO 2025-06-23 13:42:11,455 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\sales\views.py changed, reloading.
+INFO 2025-06-23 13:42:13,130 autoreload Watching for file changes with StatReloader
+INFO 2025-06-23 13:43:02,633 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\sales\views.py changed, reloading.
+INFO 2025-06-23 13:43:04,293 autoreload Watching for file changes with StatReloader
+INFO 2025-06-23 13:43:39,584 basehttp "GET /sales/sales-transactions/?start_date=2025-04-01&end_date=2025-06-23 HTTP/1.1" 200 2984
+INFO 2025-06-23 13:44:40,774 basehttp "GET /sales/sales-transactions/?start_date=2025-06-20&end_date=2025-06-23 HTTP/1.1" 200 1004
+INFO 2025-06-23 13:46:00,700 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\sales\views_export.py changed, reloading.
+INFO 2025-06-23 13:46:02,155 autoreload Watching for file changes with StatReloader
+INFO 2025-06-23 13:46:09,098 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\sales\views_export.py changed, reloading.
+INFO 2025-06-23 13:46:10,412 autoreload Watching for file changes with StatReloader
+INFO 2025-06-23 13:46:24,264 basehttp "GET /sales/sales-transactions/?start_date=2025-06-20&end_date=2025-06-23 HTTP/1.1" 200 1004
+INFO 2025-06-23 13:46:35,441 basehttp "GET /sales/sales-transactions/export/excel/?start_date=2025-06-20&end_date=2025-06-23 HTTP/1.1" 200 5314
+INFO 2025-06-23 13:46:43,657 basehttp "GET /sales/sales-transactions/export/pdf/?start_date=2025-06-20&end_date=2025-06-23 HTTP/1.1" 200 2831
+INFO 2025-06-23 13:54:16,204 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\sales_and_finance\settings.py changed, reloading.
+INFO 2025-06-23 13:54:17,465 autoreload Watching for file changes with StatReloader
+INFO 2025-06-23 13:54:20,157 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\sales_and_finance\settings.py changed, reloading.
+INFO 2025-06-23 13:54:21,588 autoreload Watching for file changes with StatReloader

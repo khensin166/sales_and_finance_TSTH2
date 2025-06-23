@@ -163,33 +163,33 @@ CORS_ALLOW_HEADERS = [
 #     }
 # }
 
-DATABASES = {
-    'default': {
-        'ENGINE': config('DB_ENGINE'),
-        'NAME': config('DB_NAME'),
-        'USER': config('DB_USER'),
-        'PASSWORD': config('DB_PASSWORD'),
-        'HOST': config('DB_HOST'),
-        'PORT': config('DB_PORT'),
-        'OPTIONS': {
-            'charset': 'utf8mb4',
-        },
-    }
-}
-
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'tthsanbe_t5th',
-#         'USER': 'tthsanbe_TA',
-#         'PASSWORD': 'Cy2U0x1JJRFY',
-#         'HOST': '178.248.73.218',
-#         'PORT': '3306',
+#         'ENGINE': config('DB_ENGINE'),
+#         'NAME': config('DB_NAME'),
+#         'USER': config('DB_USER'),
+#         'PASSWORD': config('DB_PASSWORD'),
+#         'HOST': config('DB_HOST'),
+#         'PORT': config('DB_PORT'),
 #         'OPTIONS': {
 #             'charset': 'utf8mb4',
 #         },
 #     }
 # }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'tthsanbe_t5th',
+        'USER': 'tthsanbe_TA',
+        'PASSWORD': 'Cy2U0x1JJRFY',
+        'HOST': '178.248.73.218',
+        'PORT': '3306',
+        'OPTIONS': {
+            'charset': 'utf8mb4',
+        },
+    }
+}
 
 
 # Password validation
