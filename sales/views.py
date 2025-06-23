@@ -20,10 +20,7 @@ class OrderListCreateView(generics.ListCreateAPIView):
         try:
             instance = serializer.save()
             logger.info(f"Order created successfully: {instance.order_no}")
-            return Response({
-                "message": "Order created successfully!",
-                "data": OrderSerializer(instance).data
-            }, status=status.HTTP_201_CREATED)
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
         except serializers.ValidationError as e:
             logger.error(f"Validation error during order creation: {str(e)}")
             return Response({
@@ -54,10 +51,7 @@ class OrderDetailView(generics.RetrieveUpdateDestroyAPIView):
                 }, status=status.HTTP_400_BAD_REQUEST)
             instance = serializer.save()
             logger.info(f"Order updated successfully: {instance.order_no}")
-            return Response({
-                "message": "Order updated successfully!",
-                "data": OrderSerializer(instance).data
-            }, status=status.HTTP_200_OK)
+            return Response(serializer.data, status=status.HTTP_200_OK)
         except serializers.ValidationError as e:
             logger.error(f"Validation error during order update: {str(e)}")
             return Response({
@@ -74,9 +68,7 @@ class OrderDetailView(generics.RetrieveUpdateDestroyAPIView):
             order_no = instance.order_no
             instance.delete()
             logger.info(f"Order deleted successfully: {order_no}")
-            return Response({
-                "message": "Order deleted successfully!"
-            }, status=status.HTTP_204_NO_CONTENT)
+            return Response(status=status.HTTP_204_NO_CONTENT)
         except Exception as e:
             logger.error(f"Error during order deletion: {str(e)}")
             return Response({
@@ -93,7 +85,7 @@ class OrderDetailView(generics.RetrieveUpdateDestroyAPIView):
     def destroy(self, request, *args, **kwargs):
         instance = self.get_object()
         return self.perform_destroy(instance)
-    
+
 class SalesTransactionListView(generics.ListAPIView):
     queryset = SalesTransaction.objects.all().order_by('-transaction_date')
     serializer_class = SalesTransactionSerializer
@@ -124,7 +116,7 @@ class SalesTransactionDetailView(generics.RetrieveAPIView):
             serializer = self.get_serializer(instance)
             logger.info(f"Successfully retrieved sales transaction {instance.id}")
             return Response(serializer.data, status=status.HTTP_200_OK)
-        except activo as e:
+        except Exception as e:
             logger.error(f"Error retrieving sales transaction {instance.id}: {str(e)}")
             return Response({
                 "error": "An unexpected error occurred while retrieving the sales transaction."

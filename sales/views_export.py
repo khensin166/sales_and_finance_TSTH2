@@ -35,12 +35,18 @@ def export_pdf(request):
         except:
             pass
 
+    total_quantity = sum(t.quantity for t in transactions)
+    total_sales = sum(t.total_price for t in transactions)
+    context = {
+        'transactions': transactions,
+        'total_quantity': total_quantity,
+        'total_sales': total_sales,
+        'start_date': formatted_start,
+        'end_date': formatted_end,
+    }
+
     template = get_template("pdf/sales_transaction_report.html")
-    html = template.render({
-        "transactions": transactions,
-        "start_date": formatted_start,
-        "end_date": formatted_end
-    })
+    html = template.render(context)
 
     response = HttpResponse(content_type="application/pdf")
     response["Content-Disposition"] = "attachment; filename=sales_transaction.pdf"
@@ -110,4 +116,3 @@ def export_excel(request):
     response = HttpResponse(content_type='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
     response['Content-Disposition'] = 'attachment; filename=sales_transaction.xlsx'
     wb.save(response)
-    return response
