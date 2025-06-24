@@ -5747,3 +5747,54 @@ INFO 2025-06-23 14:19:14,844 basehttp "GET /finance/export/pdf/?start_date=2025-
 INFO 2025-06-23 14:19:21,295 basehttp "GET /finance/export/pdf/?start_date=2025-04-01&end_date=2025-06-16 HTTP/1.1" 200 2811
 INFO 2025-06-23 14:21:53,937 basehttp "GET /finance/export/pdf/?start_date=2025-04-01&end_date=2025-06-16 HTTP/1.1" 200 3352
 INFO 2025-06-23 14:22:44,388 basehttp "GET /finance/export/pdf/?start_date=2025-04-01&end_date=2025-06-16 HTTP/1.1" 200 3352
+INFO 2025-06-24 14:20:38,347 autoreload Watching for file changes with StatReloader
+INFO 2025-06-24 14:20:54,128 basehttp "GET /sales/sales-transactions/?start_date=2025-05-24&end_date=2025-06-24 HTTP/1.1" 200 2954
+INFO 2025-06-24 14:21:08,942 basehttp "GET /product-stock HTTP/1.1" 200 5651
+INFO 2025-06-24 14:21:10,627 basehttp "GET /sales/orders/ HTTP/1.1" 200 8979
+INFO 2025-06-24 14:21:16,673 basehttp "GET /sales/sales-transactions/?start_date=2025-05-24&end_date=2025-06-24 HTTP/1.1" 200 2954
+ERROR 2025-06-24 14:21:18,993 log Internal Server Error: /sales/sales-transactions/export/excel/
+Traceback (most recent call last):
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\khens\Envs\notesenv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view sales.views_export.export_excel didn't return an HttpResponse object. It returned None instead.
+ERROR 2025-06-24 14:21:18,994 basehttp "GET /sales/sales-transactions/export/excel/?start_date=2025-05-24&end_date=2025-06-24 HTTP/1.1" 500 24845
+INFO 2025-06-24 14:21:28,223 basehttp "GET /product-stock HTTP/1.1" 200 5651
+INFO 2025-06-24 14:21:28,597 basehttp "GET /media/products/susucoklat_PvO6tuq.jpg HTTP/1.1" 304 0
+INFO 2025-06-24 14:21:28,597 basehttp "GET /media/products/strawberry_LXKnE3j.jpg HTTP/1.1" 304 0
+INFO 2025-06-24 14:21:28,598 basehttp "GET /media/products/1000439974.jpg HTTP/1.1" 304 0
+INFO 2025-06-24 14:21:29,483 basehttp "GET /product-type HTTP/1.1" 200 1766
+INFO 2025-06-24 14:26:46,070 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\sales\views_export.py changed, reloading.
+INFO 2025-06-24 14:26:47,647 autoreload Watching for file changes with StatReloader
+INFO 2025-06-24 14:27:07,894 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\sales\views_export.py changed, reloading.
+INFO 2025-06-24 14:27:09,119 autoreload Watching for file changes with StatReloader
+INFO 2025-06-24 14:27:16,116 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\sales\views_export.py changed, reloading.
+INFO 2025-06-24 14:27:17,378 autoreload Watching for file changes with StatReloader
+INFO 2025-06-24 14:29:06,169 basehttp "GET /sales/sales-transactions/?start_date=2025-05-24&end_date=2025-06-24 HTTP/1.1" 200 2954
+ERROR 2025-06-24 14:29:11,473 views_export Unexpected error in export_excel: name 'Workbook' is not defined
+ERROR 2025-06-24 14:29:11,474 log Internal Server Error: /sales/sales-transactions/export/excel/
+ERROR 2025-06-24 14:29:11,475 basehttp "GET /sales/sales-transactions/export/excel/?start_date=2025-05-24&end_date=2025-06-24 HTTP/1.1" 500 59
+ERROR 2025-06-24 14:30:07,503 views_export Unexpected error in export_excel: name 'Workbook' is not defined
+ERROR 2025-06-24 14:30:07,504 log Internal Server Error: /sales/sales-transactions/export/excel/
+ERROR 2025-06-24 14:30:07,504 basehttp "GET /sales/sales-transactions/export/excel/?start_date=2025-06-18&end_date=2025-06-19 HTTP/1.1" 500 59
+ERROR 2025-06-24 14:30:09,988 views_export Unexpected error in export_excel: name 'Workbook' is not defined
+ERROR 2025-06-24 14:30:09,988 log Internal Server Error: /sales/sales-transactions/export/excel/
+ERROR 2025-06-24 14:30:09,989 basehttp "GET /sales/sales-transactions/export/excel/?start_date=2025-06-18&end_date=2025-06-19 HTTP/1.1" 500 59
+ERROR 2025-06-24 14:30:10,719 views_export Unexpected error in export_excel: name 'Workbook' is not defined
+ERROR 2025-06-24 14:30:10,719 log Internal Server Error: /sales/sales-transactions/export/excel/
+ERROR 2025-06-24 14:30:10,720 basehttp "GET /sales/sales-transactions/export/excel/?start_date=2025-06-18&end_date=2025-06-19 HTTP/1.1" 500 59
+INFO 2025-06-24 14:30:27,752 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\sales\views_export.py changed, reloading.
+INFO 2025-06-24 14:30:29,174 autoreload Watching for file changes with StatReloader
+INFO 2025-06-24 14:30:34,085 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\sales\views_export.py changed, reloading.
+INFO 2025-06-24 14:30:35,385 autoreload Watching for file changes with StatReloader
+INFO 2025-06-24 14:30:39,043 autoreload D:\Kuliah\Semester 6\TA\Deployment\sales_and_finance_TSTH2s\sales\views_export.py changed, reloading.
+INFO 2025-06-24 14:30:40,452 autoreload Watching for file changes with StatReloader
+INFO 2025-06-24 14:30:51,397 basehttp "GET /sales/sales-transactions/export/excel/?start_date=2025-06-18&end_date=2025-06-19 HTTP/1.1" 200 5168
+INFO 2025-06-24 14:31:02,348 basehttp "GET /sales/sales-transactions/export/excel/?start_date=2025-06-18&end_date=2025-06-19 HTTP/1.1" 200 5168
+INFO 2025-06-24 14:31:14,306 basehttp "GET /sales/sales-transactions/?start_date=2025-05-24&end_date=2025-06-24 HTTP/1.1" 200 2954
+INFO 2025-06-24 14:31:17,113 basehttp "GET /sales/sales-transactions/export/excel/?start_date=2025-05-24&end_date=2025-06-24 HTTP/1.1" 200 5294
+INFO 2025-06-24 14:32:57,284 basehttp "GET /sales/sales-transactions/?start_date=2025-05-24&end_date=2025-06-24 HTTP/1.1" 200 2954
