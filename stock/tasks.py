@@ -1,3 +1,4 @@
+# stock/tasks.py
 from django.utils import timezone
 from django.db import transaction
 from stock.models import ProductStock, StockHistory, User

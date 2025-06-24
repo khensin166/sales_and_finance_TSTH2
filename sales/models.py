@@ -1,3 +1,4 @@
+# sales/models.py
 import uuid
 from django.core.exceptions import ValidationError
 from django.db import transaction

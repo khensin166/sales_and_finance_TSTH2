@@ -5798,3 +5798,12 @@ INFO 2025-06-24 14:31:02,348 basehttp "GET /sales/sales-transactions/export/exce
 INFO 2025-06-24 14:31:14,306 basehttp "GET /sales/sales-transactions/?start_date=2025-05-24&end_date=2025-06-24 HTTP/1.1" 200 2954
 INFO 2025-06-24 14:31:17,113 basehttp "GET /sales/sales-transactions/export/excel/?start_date=2025-05-24&end_date=2025-06-24 HTTP/1.1" 200 5294
 INFO 2025-06-24 14:32:57,284 basehttp "GET /sales/sales-transactions/?start_date=2025-05-24&end_date=2025-06-24 HTTP/1.1" 200 2954
+INFO 2025-06-24 17:26:36,694 autoreload Watching for file changes with StatReloader
+INFO 2025-06-24 17:27:43,632 basehttp "POST /trigger-cron/ HTTP/1.1" 200 81
+INFO 2025-06-24 17:34:19,999 basehttp "GET /sales/sales-transactions/?start_date=2025-05-24&end_date=2025-06-24 HTTP/1.1" 200 2954
+INFO 2025-06-24 17:41:25,567 basehttp "GET /product-stock HTTP/1.1" 200 5651
+INFO 2025-06-24 17:41:27,127 basehttp "GET /product-type HTTP/1.1" 200 1766
+INFO 2025-06-24 17:41:55,092 basehttp "POST /product-stock HTTP/1.1" 201 622
+INFO 2025-06-24 17:41:57,951 basehttp "GET /product-stock HTTP/1.1" 200 6245
+INFO 2025-06-24 17:42:18,926 basehttp "POST /product-stock HTTP/1.1" 201 593
+INFO 2025-06-24 17:42:21,966 basehttp "GET /product-stock HTTP/1.1" 200 6840

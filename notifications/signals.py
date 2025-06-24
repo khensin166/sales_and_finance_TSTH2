@@ -12,7 +12,7 @@ def create_order_notification(sender, instance, created, **kwargs):
         Notification.objects.create(
             order=instance,
             user_id=2,  # Replace with appropriate user ID, e.g., from request.user
-            message=f"Pesanan baru #{instance.order_no} dari {instance.customer_name}",
+            message=f"New Order #{instance.order_no} from {instance.customer_name} please process immediately",
             type='ORDER',
             is_read=False
         )
