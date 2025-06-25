@@ -5807,3 +5807,12 @@ INFO 2025-06-24 17:41:55,092 basehttp "POST /product-stock HTTP/1.1" 201 622
 INFO 2025-06-24 17:41:57,951 basehttp "GET /product-stock HTTP/1.1" 200 6245
 INFO 2025-06-24 17:42:18,926 basehttp "POST /product-stock HTTP/1.1" 201 593
 INFO 2025-06-24 17:42:21,966 basehttp "GET /product-stock HTTP/1.1" 200 6840
+INFO 2025-06-25 09:07:15,698 autoreload Watching for file changes with StatReloader
+WARNING 2025-06-25 09:07:23,130 log Not Found: /
+WARNING 2025-06-25 09:07:23,132 basehttp "GET / HTTP/1.1" 404 5286
+WARNING 2025-06-25 09:07:23,389 log Not Found: /favicon.ico
+WARNING 2025-06-25 09:07:23,390 basehttp "GET /favicon.ico HTTP/1.1" 404 5337
+INFO 2025-06-25 09:07:35,772 basehttp "GET /product-type HTTP/1.1" 200 20042
+INFO 2025-06-25 09:07:46,711 basehttp "GET /product-type/34 HTTP/1.1" 301 0
+INFO 2025-06-25 09:07:47,566 basehttp "GET /product-type/34/ HTTP/1.1" 200 18928
+INFO 2025-06-25 09:09:42,879 basehttp "PUT /product-type/34/ HTTP/1.1" 200 18154
