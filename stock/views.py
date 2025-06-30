@@ -209,18 +209,6 @@ class SellProductView(APIView):
         # Endpoint untuk cron-job.org
 @csrf_exempt
 @require_POST
-# def trigger_cron(request):
-#     """
-#     Endpoint untuk cron-job.org untuk menjalankan pengecekan stok kadaluarsa.
-#     """
-#     try:
-#         logger.info("Cron trigger endpoint called at %s WIB", timezone.now().astimezone(timezone.get_current_timezone()))
-#         check_product_expiration()
-#         logger.info("Cron job completed successfully")
-#         return JsonResponse({'status': 'success', 'message': 'Expiration check completed'}, status=200)
-#     except Exception as e:
-#         logger.error("Error in cron trigger: %s", str(e), exc_info=True)
-#         return JsonResponse({'status': 'error', 'message': str(e)}, status=500)
 def trigger_cron(request):
     """
     Endpoint untuk cron-job.org untuk menjalankan pengecekan stok kadaluarsa dan status order.

@@ -176,7 +176,7 @@ class ProductStock(models.Model):
                 Notification.objects.create(
                     product_stock=product,
                     user_id=2,  # Ganti dengan ID pengguna yang sesuai
-                    message=f"Produk {product.product_type} telah kadaluarsa pada {product.expiry_at}!",
+                    message=f"Product {product.product_type} has expired at {product.expiry_at}!",
                     type='PRODUCT_EXPIRED',
                     is_read=False
                 )

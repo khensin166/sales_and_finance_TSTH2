@@ -43,7 +43,7 @@ def check_product_expiration():
                             Notification.objects.create(
                                 product_stock=product,
                                 user_id=admin.id,
-                                message=f"Produk {product.product_type} akan kadaluarsa dalam waktu kurang dari 4 jam pada {expiry_wib.strftime('%Y-%m-%d %H:%M:%S %Z')}! Harap segera diproses!",
+                                message=f"Product {product.product_type} will expire in less than 4 hours on {expiry_wib.strftime('%Y-%m-%d %H:%M:%S %Z')}! Please process it immediately!",
                                 type='EXPIRY_WARN_4H',
                                 is_read=False,
                                 created_at_wib=timezone.now().astimezone(timezone.get_current_timezone())
@@ -68,7 +68,7 @@ def check_product_expiration():
                             Notification.objects.create(
                                 product_stock=product,
                                 user_id=admin.id,
-                                message=f"Produk {product.product_type} telah kadaluarsa pada {expiry_wib.strftime('%Y-%m-%d %H:%M:%S %Z')}!",
+                                message=f"Product {product.product_type} has expired on {expiry_wib.strftime('%Y-%m-%d %H:%M:%S %Z')}!",
                                 type='PROD_EXPIRED',
                                 is_read=False,
                                 created_at_wib=timezone.now().astimezone(timezone.get_current_timezone())
@@ -93,13 +93,13 @@ def check_product_expiration():
                         Notification.objects.create(
                             product_stock=product,
                             user_id=admin.id,
-                            message=f"Produk {product.product_type} telah kadaluarsa lebih dari 2 jam pada {expiry_wib.strftime('%Y-%m-%d %H:%M:%S %Z')}. Harap ditindaklanjuti!",
+                            message=f"Product {product.product_type} has been expired for more than 2 hours since {expiry_wib.strftime('%Y-%m-%d %H:%M:%S %Z')}. Please follow up!",
                             type='PRODUCT_LONG_EXPIRED',
                             is_read=False,
                             created_at_wib=timezone.now().astimezone(timezone.get_current_timezone())
                         )
                         logger.info("Sent long expired notification for product %s to user %s", product.id, admin.id)
-                    # Ubah status produk untuk mencegah pemrosesan ulang
+                    # Change the status of the product to prevent reprocessing
                     product.status = "long_expired_processed"
                     product.save()
                 else:

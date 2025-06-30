@@ -49,7 +49,7 @@ def create_stock_notification(sender, instance, created, **kwargs):
         Notification.objects.create(
             product_stock=instance,
             user_id=2,  # Replace with appropriate user ID
-            message=f"Produk baru dibuat: {instance.id} - Status: {instance.status} - Milk Used: {total_milk_used}L from {batch_details}",
+            message=f"New Product Have been Created: {instance.id} - Status: {instance.status} - Milk Used: {total_milk_used}L from {batch_details}",
             type='PRODUCT_STOCK',
             is_read=False
         )
